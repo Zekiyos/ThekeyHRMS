@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSsearch" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Date_Birth;datatype:date,name:Place_Birth;datatype:string,name:Age;datatype:int,name:Sex;datatype:string,name:Email;datatype:string,name:Date_Employement;datatype:date,name:Department;datatype:string,name:Position;datatype:string,name:Educational_Status;datatype:string,name:Salary;datatype:int,name:Martial_Status;datatype:string,name:Children_number;datatype:int,name:Name_Child;datatype:string,name:Age_Child;datatype:string,name:Sex_Child;datatype:string,name:Photo;datatype:string,name:Image;datatype:blob,name:HardCopy_Shelf_No;datatype:string,name:ModifiedBy;datatype:string" />
+</info>

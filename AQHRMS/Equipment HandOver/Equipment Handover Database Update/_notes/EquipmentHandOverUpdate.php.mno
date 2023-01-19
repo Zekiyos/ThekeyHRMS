@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSEquipmnetHandoverUpdate" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:EquipmentName;datatype:string,name:Taken_Date;datatype:date,name:Replacement_Date;datatype:date,name:Returning_Date;datatype:date,name:Returned;datatype:string" />
+</info>

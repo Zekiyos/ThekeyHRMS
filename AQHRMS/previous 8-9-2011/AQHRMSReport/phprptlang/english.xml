@@ -1,0 +1,1786 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<ew-language date="2011/8/18" version="4.0.0" id="en" name="English" desc="English" author="e.World Technology Ltd.">
+	<global>
+		<phrase id="allrecords" value="All"/>
+		<phrase id="alwaysask" value="Always ask for my user name and password"/>
+		<phrase id="autologin" value="Auto login until I logout explicitly"/>
+		<phrase id="backtologin" value="Back to Login Page"/>
+		<phrase id="booleanno" value="No"/>
+		<phrase id="booleanyes" value="Yes"/>
+		<phrase id="cancelbtn" value="Cancel" client="1"/>
+		<phrase id="currentfilters" value="CURRENT FILTERS:"/>
+		<phrase id="entersenderemail" value="Please enter sender email" client="1"/>
+		<phrase id="enterpropersenderemail" value="Exceed maximum sender email count or email address incorrect" client="1"/>
+		<phrase id="enterrecipientemail" value="Please enter recipient email" client="1"/>
+		<phrase id="enterproperrecipientemail" value="Exceed maximum recipient email count or email address incorrect" client="1"/>
+		<phrase id="enterproperccemail" value="Exceed maximum cc email count or email address incorrect" client="1"/>
+		<phrase id="enterproperbccemail" value="Exceed maximum bcc email count or email address incorrect" client="1"/>
+		<phrase id="entersubject" value="Please enter subject" client="1"/>
+		<phrase id="emailformsender" value="From"/>
+		<phrase id="emailformrecipient" value="To"/>
+		<phrase id="emailformcc" value="Cc"/>
+		<phrase id="emailformbcc" value="Bcc"/>
+		<phrase id="emailformsubject" value="Subject"/>
+		<phrase id="emailformmessage" value="Message"/>
+		<phrase id="emailformcontenttype" value="Send as"/>
+		<phrase id="emailformcontenttypeurl" value="URL"/>
+		<phrase id="emailformcontenttypehtml" value="HTML"/>
+		<phrase id="emptylabel" value="(Empty)"/>
+		<phrase id="enterpassword" value="Please enter password" client="1"/>
+		<phrase id="enterpwd" value="Please enter password" client="1"/>
+		<phrase id="entersearchcriteria" value="Please enter search criteria"/>
+		<phrase id="enteruid" value="Please enter user ID" client="1"/>
+		<phrase id="exceedmaxemailexport" value="Exceed maximum export email count. Please try again later."/>
+		<phrase id="exporttoemail" value="Email" client="1"/>
+		<phrase id="exporttoexcel" value="Export to Excel"/>
+		<phrase id="exporttoword" value="Export to Word"/>
+		<phrase id="filters" value="Filters"/>
+		<phrase id="incorrectcreditcard" value="Incorrect credit card number" client="1"/>
+		<phrase id="incorrectdateymd" value="Incorrect date, format = yyyy%smm%sdd"/>
+		<phrase id="incorrectdatemdy" value="Incorrect date, format = mm%sdd%syyyy"/>
+		<phrase id="incorrectdatedmy" value="Incorrect date, format = dd%smm%syyyy"/>
+		<phrase id="incorrectemail" value="Incorrect email" client="1"/>
+		<phrase id="incorrectfield" value="Incorrect field" client="1"/>
+		<phrase id="incorrectfloat" value="Incorrect floating point number" client="1"/>
+		<phrase id="incorrectguid" value="Incorrect GUID" client="1"/>
+		<phrase id="incorrectinteger" value="Incorrect integer" client="1"/>
+		<phrase id="incorrectphone" value="Incorrect phone number" client="1"/>
+		<phrase id="incorrectrange" value="Number must be between %1 and %2" client="1"/>
+		<phrase id="incorrectregexp" value="Regular expression not matched" client="1"/>
+		<phrase id="incorrectssn" value="Incorrect Social Security Number" client="1"/>
+		<phrase id="incorrecttime" value="Incorrect time (hh:mm:ss)" client="1"/>
+		<phrase id="incorrectzip" value="Incorrect ZIP code" client="1"/>
+		<phrase id="invaliduidpwd" value="Incorrect user ID or password"/>
+		<phrase id="login" value="Login"/>
+		<phrase id="loginpage" value="Login Page"/>
+		<phrase id="logout" value="Logout"/>
+		<phrase id="monthjan" value="Jan"/>
+		<phrase id="monthfeb" value="Feb"/>
+		<phrase id="monthmar" value="Mar"/>
+		<phrase id="monthapr" value="Apr"/>
+		<phrase id="monthmay" value="May"/>
+		<phrase id="monthjun" value="Jun"/>
+		<phrase id="monthjul" value="Jul"/>
+		<phrase id="monthaug" value="Aug"/>
+		<phrase id="monthsep" value="Sep"/>
+		<phrase id="monthoct" value="Oct"/>
+		<phrase id="monthnov" value="Nov"/>
+		<phrase id="monthdec" value="Dec"/>
+		<phrase id="next" value="Next"/>
+		<phrase id="nopermission" value="You do not have the right permission to view the page"/>
+		<phrase id="norecord" value="No records found"/>
+		<phrase id="noreportorcharts" value="No report or charts is selected for generation. Please check your report/charts settings."/>
+		<phrase id="nodistinctcolvals" value="No distinct column values for sql: "/>
+		<phrase id="nulllabel" value="(Null)"/>
+		<phrase id="of" value="of"/>
+		<phrase id="page" value="Page"/>
+		<phrase id="pagerfirst" value="First"/>
+		<phrase id="pagerlast" value="Last"/>
+		<phrase id="pagernext" value="Next"/>
+		<phrase id="pagerprevious" value="Previous"/>
+		<phrase id="password" value="Password"/>
+		<phrase id="pleaseselect" value=""/>
+		<phrase id="popupall" value="(All)" client="1"/>
+		<phrase id="popupcancel" value="Cancel" client="1"/>
+		<phrase id="popupfrom" value="From" client="1"/>
+		<phrase id="popupnovalue" value="No value selected!" client="1"/>
+		<phrase id="popupok" value="  OK  " client="1"/>
+		<phrase id="popupselect" value="Please Select" client="1"/>
+		<phrase id="popupto" value="To" client="1"/>
+		<phrase id="prev" value="Prev"/>
+		<phrase id="printerfriendly" value="Printer Friendly"/>
+		<phrase id="group" value="Groups"/>
+		<phrase id="groupsperpage" value="Groups Per Page"/>
+		<phrase id="qtr1" value="1st Quarter"/>
+		<phrase id="qtr2" value="2nd Quarter"/>
+		<phrase id="qtr3" value="3rd Quarter"/>
+		<phrase id="qtr4" value="4th Quarter"/>
+		<phrase id="record" value="Records"/>
+		<phrase id="recordsperpage" value="Records Per Page"/>
+		<phrase id="report" value="Reports"/>
+		<phrase id="reset" value="Reset"/>
+		<phrase id="resetallfilter" value="Reset All Filters"/>
+		<phrase id="resetsearch" value="Reset Search Criteria"/>
+		<phrase id="rptavg" value="AVERAGE"/>
+		<phrase id="rptcnt" value="COUNT"/>
+		<phrase id="rptdtlrec" value="Detail Records"/>
+		<phrase id="rptgrandsummary" value="Grand Summary"/>
+		<phrase id="rptgrandtotal" value="Grand Total"/>
+		<phrase id="rptmax" value="MAXIMUM"/>
+		<phrase id="rptmin" value="MINIMUM"/>
+		<phrase id="rptpagesummary" value="Page Summary"/>
+		<phrase id="rptpagetotal" value="Page Total"/>
+		<phrase id="rptsum" value="SUM"/>
+		<phrase id="rptsumhead" value="Summary for"/>
+		<phrase id="saveusername" value="Save my user name"/>
+		<phrase id="search" value="Search"/>
+		<phrase id="selectall" value="(All)"/>
+		<phrase id="sendemailbtn" value="Send" client="1"/>
+		<phrase id="sendemailsuccess" value="Email sent successfully" client="1"/>
+		<phrase id="showall" value="Show all"/>
+		<phrase id="summary" value="Summary"/>
+		<phrase id="tasks" value="Tasks"/>
+		<phrase id="to" value="to"/>
+		<phrase id="top" value="Top"/>
+		<phrase id="total" value="Total"/>
+		<phrase id="username" value="User Name"/>
+		<phrase id="week" value="Week"/>
+		<phrase id="year" value="Year"/>
+		<!-- Search Operators -->
+		<phrase id="=" value="="/>
+		<phrase id="&lt;&gt;" value="&lt;&gt;"/>
+		<phrase id="&lt;" value="&lt;"/>
+		<phrase id="&lt;=" value="&lt;="/>
+		<phrase id="&gt;" value="&gt;"/>
+		<phrase id="&gt;=" value="&gt;="/>
+		<phrase id="like" value="contains"/>
+		<phrase id="not like" value="not contains"/>
+		<phrase id="starts with" value="starts with"/>
+		<phrase id="between" value="between"/>
+		<phrase id="and" value="and"/>
+		<phrase id="or" value="or"/>
+		<!-- Menu Prefix/Suffix -->
+		<phrase id="simplereportmenuitemprefix" value=""/>
+		<phrase id="simplereportmenuitemsuffix" value=""/>
+		<phrase id="detailsummaryreportmenuitemprefix" value=""/>
+		<phrase id="detailsummaryreportmenuitemsuffix" value=""/>
+		<phrase id="crosstabreportmenuitemprefix" value=""/>
+		<phrase id="crosstabreportmenuitemsuffix" value=""/>
+		<phrase id="chartreportmenuitemprefix" value=""/>
+		<phrase id="chartreportmenuitemsuffix" value=""/>
+		<!-- Advanced Filter -->
+		<phrase id="future" value="Future"/>
+		<phrase id="past" value="Past"/>
+		<phrase id="last14days" value="Last 14 days"/>
+		<phrase id="last30days" value="Last 30 days"/>
+		<phrase id="last7days" value="Last 7 days"/>
+		<phrase id="next14days" value="Next 14 days"/>
+		<phrase id="next30days" value="Next 30 days"/>
+		<phrase id="next7days" value="Next 7 days"/>
+		<phrase id="today" value="Today"/>
+		<phrase id="tomorrow" value="Tomorrow"/>
+		<phrase id="yesterday" value="Yesterday"/>
+		<phrase id="lastmonth" value="Last month"/>
+		<phrase id="nextmonth" value="Next month"/>
+		<phrase id="thismonth" value="This month"/>
+		<phrase id="lasttwoweeks" value="Last two weeks"/>
+		<phrase id="lastweek" value="Last week"/>
+		<phrase id="nexttwoweeks" value="Next two weeks"/>
+		<phrase id="nextweek" value="Next week"/>
+		<phrase id="thisweek" value="This week"/>
+		<phrase id="lastyear" value="Last year"/>
+		<phrase id="nextyear" value="Next year"/>
+		<phrase id="thisyear" value="This year"/>
+	</global>
+	<project><phrase id="bodytitle" value="Thekey HRMS Report"/>
+<phrase id="footertext" value="&amp;copy;2011Thekeysoft. All rights reserved."/>
+<menu id="50"><phrase id="menutext" value="terminated employee sick leave"/>
+</menu>
+<menu id="51"><phrase id="menutext" value="cholinesterase test"/>
+</menu>
+<menu id="37"><phrase id="menutext" value="Recruitment Per Deparment"/>
+</menu>
+<menu id="38"><phrase id="menutext" value="Recruitment Per Department"/>
+</menu>
+<menu id="39"><phrase id="menutext" value="Recruitment Per Department"/>
+</menu>
+<menu id="41"><phrase id="menutext" value="employee demotion"/>
+</menu>
+<menu id="43"><phrase id="menutext" value="employees audit"/>
+</menu>
+<menu id="44"><phrase id="menutext" value="sample warning letter"/>
+</menu>
+<menu id="22"><phrase id="menutext" value="Total Leave Day Taken"/>
+</menu>
+<menu id="23"><phrase id="menutext" value="Total Attendance"/>
+</menu>
+<menu id="55"><phrase id="menutext" value="Total Employee Absent Hour Per Department"/>
+</menu>
+<menu id="24"><phrase id="menutext" value="Employee Personal Record"/>
+</menu>
+<menu id="25"><phrase id="menutext" value="Number Of Employee Per Department"/>
+</menu>
+<menu id="49"><phrase id="menutext" value="Number Of Employee Per Department Summary"/>
+</menu>
+<menu id="54"><phrase id="menutext" value="Funner Chart Number of  Employee Per Department"/>
+</menu>
+<menu id="48"><phrase id="menutext" value="AQ Employee Distribution"/>
+</menu>
+<menu id="52"><phrase id="menutext" value="Cholinesterase Test"/>
+</menu>
+<menu id="27"><phrase id="menutext" value="terminated employee"/>
+</menu>
+<menu id="28"><phrase id="menutext" value="Terminated Employee"/>
+</menu>
+<menu id="53"><phrase id="menutext" value="Terminated Employee Per Department"/>
+</menu>
+<menu id="29"><phrase id="menutext" value="department transfer"/>
+</menu>
+<menu id="30"><phrase id="menutext" value="Transfered Out"/>
+</menu>
+<menu id="31"><phrase id="menutext" value="Tranfered In"/>
+</menu>
+<menu id="32"><phrase id="menutext" value="recruitment"/>
+</menu>
+<menu id="33"><phrase id="menutext" value="Recruited Employee"/>
+</menu>
+<menu id="1"><phrase id="menutext" value="employees"/>
+</menu>
+<menu id="2"><phrase id="menutext" value="annual leave"/>
+</menu>
+<menu id="3"><phrase id="menutext" value="employee personal recordold"/>
+</menu>
+<menu id="4"><phrase id="menutext" value="employee personal record"/>
+</menu>
+<menu id="5"><phrase id="menutext" value="maternity leave"/>
+</menu>
+<menu id="6"><phrase id="menutext" value="funeral leave"/>
+</menu>
+<menu id="7"><phrase id="menutext" value="2011 july"/>
+</menu>
+<menu id="8"><phrase id="menutext" value="total attendance"/>
+</menu>
+<menu id="9"><phrase id="menutext" value="totalleavedays"/>
+</menu>
+<menu id="10"><phrase id="menutext" value="special leave"/>
+</menu>
+<menu id="11"><phrase id="menutext" value="sick leave"/>
+</menu>
+<menu id="12"><phrase id="menutext" value="wedding leave"/>
+</menu>
+<menu id="13"><phrase id="menutext" value="paternity leave"/>
+</menu>
+<menu id="21"><phrase id="menutext" value="Leave Report"/>
+</menu>
+<menu id="14"><phrase id="menutext" value="Annual Leave"/>
+</menu>
+<menu id="26"><phrase id="menutext" value="Annual Leave Pie Chart"/>
+</menu>
+<menu id="34"><phrase id="menutext" value="Annual Leave Summary Per Deparmtent"/>
+</menu>
+<menu id="35"><phrase id="menutext" value="Annual Leave Per Department"/>
+</menu>
+<menu id="15"><phrase id="menutext" value="Funeral Leave"/>
+</menu>
+<menu id="42"><phrase id="menutext" value="Funera Leave Per Department"/>
+</menu>
+<menu id="16"><phrase id="menutext" value="Sick Leave"/>
+</menu>
+<menu id="45"><phrase id="menutext" value="Sick Leave Per Department Summary"/>
+</menu>
+<menu id="56"><phrase id="menutext" value="Average Sick Leave Per Department"/>
+</menu>
+<menu id="17"><phrase id="menutext" value="Maternity Leave"/>
+</menu>
+<menu id="36"><phrase id="menutext" value="Maternityl Leave Summary Per Department"/>
+</menu>
+<menu id="18"><phrase id="menutext" value="Paternity Leave"/>
+</menu>
+<menu id="40"><phrase id="menutext" value="Paternity Leave Per Department Summary"/>
+</menu>
+<menu id="19"><phrase id="menutext" value="Special Leave"/>
+</menu>
+<menu id="46"><phrase id="menutext" value="Special Leave Per Department Summary"/>
+</menu>
+<menu id="20"><phrase id="menutext" value="Wedding Leave"/>
+</menu>
+<menu id="47"><phrase id="menutext" value="Wedding Leave Per Department Summary"/>
+</menu>
+<table id="z2011_july"><phrase id="tblcaption" value="2011 july"/>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="basic_salary"><phrase id="fldcaption" value="Basic salary"/>
+</field>
+<field id="section"><phrase id="fldcaption" value="Section"/>
+</field>
+<field id="sub_section"><phrase id="fldcaption" value="Sub Section"/>
+</field>
+<field id="group"><phrase id="fldcaption" value="Group"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="position_allowance"><phrase id="fldcaption" value="Position Allowance"/>
+</field>
+<field id="hardship_allowance"><phrase id="fldcaption" value="Hardship Allowance"/>
+</field>
+<field id="housing_allowance"><phrase id="fldcaption" value="Housing Allowance"/>
+</field>
+<field id="loan"><phrase id="fldcaption" value="Loan"/>
+</field>
+<field id="court_deduction"><phrase id="fldcaption" value="Court Deduction"/>
+</field>
+<field id="other_deduction"><phrase id="fldcaption" value="Other Deduction"/>
+</field>
+<field id="bonus"><phrase id="fldcaption" value="Bonus"/>
+</field>
+<field id="chk_present_allowance"><phrase id="fldcaption" value="CHK Present Allowance"/>
+</field>
+<field id="present_allowance"><phrase id="fldcaption" value="Present Allowance"/>
+</field>
+<field id="chk_lu"><phrase id="fldcaption" value="CHK LU"/>
+</field>
+<field id="lu_contribution"><phrase id="fldcaption" value="LU Contribution"/>
+</field>
+<field id="chk_pf"><phrase id="fldcaption" value="CHK PF"/>
+</field>
+<field id="pf_amount"><phrase id="fldcaption" value="PF Amount"/>
+</field>
+<field id="pf_employee"><phrase id="fldcaption" value="PF Employee"/>
+</field>
+<field id="pf_company"><phrase id="fldcaption" value="PF Company"/>
+</field>
+<field id="chk_pension"><phrase id="fldcaption" value="CHK Pension"/>
+</field>
+<field id="pension_5"><phrase id="fldcaption" value="Pension 5"/>
+</field>
+<field id="pension_12"><phrase id="fldcaption" value="Pension 12"/>
+</field>
+<field id="material"><phrase id="fldcaption" value="Material"/>
+</field>
+<field id="chk_pledge"><phrase id="fldcaption" value="CHK Pledge"/>
+</field>
+<field id="pledge"><phrase id="fldcaption" value="Pledge"/>
+</field>
+<field id="total_holyday"><phrase id="fldcaption" value="Total Holyday"/>
+</field>
+<field id="total_absent"><phrase id="fldcaption" value="Total Absent"/>
+</field>
+<field id="total_absent_day"><phrase id="fldcaption" value="Total Absent Day"/>
+</field>
+<field id="total_leave_days"><phrase id="fldcaption" value="Total Leave Days"/>
+</field>
+<field id="working_day"><phrase id="fldcaption" value="Working Day"/>
+</field>
+<field id="working_hours"><phrase id="fldcaption" value="Working Hours"/>
+</field>
+<field id="avialable_hr"><phrase id="fldcaption" value="Avialable HR"/>
+</field>
+<field id="salary_per_hour"><phrase id="fldcaption" value="Salary Per Hour"/>
+</field>
+<field id="working_day_payment"><phrase id="fldcaption" value="Working Day Payment"/>
+</field>
+<field id="leave_day_payment"><phrase id="fldcaption" value="Leave Day Payment"/>
+</field>
+<field id="transport_allowance"><phrase id="fldcaption" value="Transport Allowance"/>
+</field>
+<field id="total_no_normal1"><phrase id="fldcaption" value="Total No normal 1"/>
+</field>
+<field id="day_ot"><phrase id="fldcaption" value="Day OT"/>
+</field>
+<field id="total_no_normal2"><phrase id="fldcaption" value="Total No normal 2"/>
+</field>
+<field id="night_ot"><phrase id="fldcaption" value="Night OT"/>
+</field>
+<field id="total_no_sunday"><phrase id="fldcaption" value="Total No Sunday"/>
+</field>
+<field id="sunday_ot"><phrase id="fldcaption" value="Sunday OT"/>
+</field>
+<field id="total_no_holyday"><phrase id="fldcaption" value="Total No Holyday"/>
+</field>
+<field id="holyday_ot"><phrase id="fldcaption" value="Holyday OT"/>
+</field>
+<field id="total_ot"><phrase id="fldcaption" value="Total OT"/>
+</field>
+<field id="holyday_double_payment"><phrase id="fldcaption" value="Holyday Double Payment"/>
+</field>
+<field id="taxable_income"><phrase id="fldcaption" value="Taxable Income"/>
+</field>
+<field id="income_tax"><phrase id="fldcaption" value="Income tax"/>
+</field>
+<field id="total_deduction"><phrase id="fldcaption" value="Total Deduction"/>
+</field>
+<field id="printlayout"><phrase id="fldcaption" value="Print Layout"/>
+</field>
+<field id="prepared"><phrase id="fldcaption" value="Prepared"/>
+</field>
+<field id="checked"><phrase id="fldcaption" value="Checked"/>
+</field>
+<field id="aproved"><phrase id="fldcaption" value="Aproved"/>
+</field>
+<field id="net_pay"><phrase id="fldcaption" value="Net Pay"/>
+</field>
+</table>
+<table id="z2011_july_attendance"/>
+<table id="annual_leave"><phrase id="tblcaption" value="annual leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="leavedays"><phrase id="fldcaption" value="Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="leave_taken_date"><phrase id="fldcaption" value="Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="annual_leave_calculate"/>
+<table id="annual_leave_calculateold"/>
+<table id="annual_leave_detail"/>
+<table id="campany_settings"/>
+<table id="court_case"/>
+<table id="department"/>
+<table id="department_transfer"><phrase id="tblcaption" value="department transfer"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="fromdepartment"><phrase id="fldcaption" value="From Department"/>
+</field>
+<field id="todepartment"><phrase id="fldcaption" value="To Department"/>
+</field>
+<field id="position_aftertransfered"><phrase id="fldcaption" value="Position After Transfered"/>
+</field>
+<field id="transfered_date"><phrase id="fldcaption" value="Transfered Date"/>
+</field>
+</table>
+<table id="disciplinary_action"/>
+<table id="employee_demotion"><phrase id="tblcaption" value="employee demotion"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="evaluation_result"><phrase id="fldcaption" value="Evaluation Result"/>
+</field>
+<field id="position_before_demotion"><phrase id="fldcaption" value="Position Before Demotion"/>
+</field>
+<field id="position_after_demotion"><phrase id="fldcaption" value="Position After Demotion"/>
+</field>
+<field id="department_before_demotion"><phrase id="fldcaption" value="Department Before Demotion"/>
+</field>
+<field id="department_after_demotion"><phrase id="fldcaption" value="Department After Demotion"/>
+</field>
+<field id="salary_before_demotion"><phrase id="fldcaption" value="Salary Before Demotion"/>
+</field>
+<field id="salary_after_demotion"><phrase id="fldcaption" value="Salary After Demotion"/>
+</field>
+<field id="demotion_date"><phrase id="fldcaption" value="Demotion Date"/>
+</field>
+</table>
+<table id="employee_personal_record"><phrase id="tblcaption" value="employee personal record"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="date_birth"><phrase id="fldcaption" value="Date Birth"/>
+</field>
+<field id="place_birth"><phrase id="fldcaption" value="Place Birth"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="zemail"><phrase id="fldcaption" value="Email"/>
+</field>
+<field id="date_employement"><phrase id="fldcaption" value="Date Employement"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="educational_status"><phrase id="fldcaption" value="Educational Status"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="martial_status"><phrase id="fldcaption" value="Martial Status"/>
+</field>
+<field id="children_number"><phrase id="fldcaption" value="Children number"/>
+</field>
+<field id="name_child"><phrase id="fldcaption" value="Name Child"/>
+</field>
+<field id="age_child"><phrase id="fldcaption" value="Age Child"/>
+</field>
+<field id="sex_child"><phrase id="fldcaption" value="Sex Child"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="Image"/>
+</field>
+<field id="experience"><phrase id="fldcaption" value="Experience"/>
+</field>
+<field id="hardcopy_shelf_no"><phrase id="fldcaption" value="Hard Copy Shelf No"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="telephone"><phrase id="fldcaption" value="Telephone"/>
+</field>
+</table>
+<table id="employee_personal_record272d072d2011"/>
+<table id="employee_personal_record_audit"/>
+<table id="employee_personal_recordcopy"/>
+<table id="employee_personal_recordold"><phrase id="tblcaption" value="employee personal recordold"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="date_birth"><phrase id="fldcaption" value="Date Birth"/>
+</field>
+<field id="place_birth"><phrase id="fldcaption" value="Place Birth"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="zemail"><phrase id="fldcaption" value="Email"/>
+</field>
+<field id="date_employement"><phrase id="fldcaption" value="Date Employement"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="educational_status"><phrase id="fldcaption" value="Educational Status"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="martial_status"><phrase id="fldcaption" value="Martial Status"/>
+</field>
+<field id="children_number"><phrase id="fldcaption" value="Children number"/>
+</field>
+<field id="name_child"><phrase id="fldcaption" value="Name Child"/>
+</field>
+<field id="age_child"><phrase id="fldcaption" value="Age Child"/>
+</field>
+<field id="sex_child"><phrase id="fldcaption" value="Sex Child"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="Image"/>
+</field>
+<field id="hardcopy_shelf_no"><phrase id="fldcaption" value="Hard Copy Shelf No"/>
+</field>
+</table>
+<table id="employee_promotion"/>
+<table id="employees"><phrase id="tblcaption" value="employees"/>
+<field id="employeenumber"><phrase id="fldcaption" value="employee Number"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="last Name"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="first Name"/>
+</field>
+<field id="extension"><phrase id="fldcaption" value="extension"/>
+</field>
+<field id="zemail"><phrase id="fldcaption" value="email"/>
+</field>
+<field id="officecode"><phrase id="fldcaption" value="office Code"/>
+</field>
+<field id="reportsto"><phrase id="fldcaption" value="reports To"/>
+</field>
+<field id="jobtitle"><phrase id="fldcaption" value="job Title"/>
+</field>
+</table>
+<table id="employees_audit"><phrase id="tblcaption" value="employees audit"/>
+<field id="id"><phrase id="fldcaption" value="id"/>
+</field>
+<field id="employeenumber"><phrase id="fldcaption" value="employee Number"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="lastname"/>
+</field>
+<field id="changedon"><phrase id="fldcaption" value="changedon"/>
+</field>
+<field id="action"><phrase id="fldcaption" value="action"/>
+</field>
+</table>
+<table id="equipment_handover"/>
+<table id="expired_disciplinary_action"/>
+<table id="funeral_leave"><phrase id="tblcaption" value="funeral leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="funeralleavedays"><phrase id="fldcaption" value="Funeral Leave Days"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="funeralleave_taken_date"><phrase id="fldcaption" value="Funeral Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="leave_allocation"/>
+<table id="letter"/>
+<table id="login"/>
+<table id="maternity_leave"><phrase id="tblcaption" value="maternity leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="maternityleavedays"><phrase id="fldcaption" value="Maternity Leave Days"/>
+</field>
+<field id="maternityleave_taken_date"><phrase id="fldcaption" value="Maternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="medical_referral"/>
+<table id="oldtotal_attendance_permanent"/>
+<table id="oldtotal_deduction_contractual"/>
+<table id="oldtotal_deduction_permanent"/>
+<table id="paternity_leave"><phrase id="tblcaption" value="paternity leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="paternityleavedays"><phrase id="fldcaption" value="Paternity Leave Days"/>
+</field>
+<field id="paternityleave_taken_date"><phrase id="fldcaption" value="Paternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="payroll_data"/>
+<table id="payroll_data_entry"/>
+<table id="payroll_output_backup"/>
+<table id="payroll_output_backupzzzz"/>
+<table id="payroll_output_contractual_backup"/>
+<table id="print_layout"/>
+<table id="probation_evalutaion"/>
+<table id="recruitment"><phrase id="tblcaption" value="recruitment"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="employee"><phrase id="fldcaption" value="Employee"/>
+</field>
+<field id="place"><phrase id="fldcaption" value="Place"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="date"><phrase id="fldcaption" value="Date"/>
+</field>
+<field id="address"><phrase id="fldcaption" value="Address"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="transport_allowance"><phrase id="fldcaption" value="Transport Allowance"/>
+</field>
+<field id="hardship_allowance"><phrase id="fldcaption" value="Hardship Allowance"/>
+</field>
+<field id="position_allowance"><phrase id="fldcaption" value="Position Allowance"/>
+</field>
+<field id="housing_allowance"><phrase id="fldcaption" value="Housing Allowance"/>
+</field>
+</table>
+<table id="sample_warning_letter"><phrase id="tblcaption" value="sample warning letter"/>
+<field id="warning_type"><phrase id="fldcaption" value="Warning Type"/>
+</field>
+<field id="letter_content"><phrase id="fldcaption" value="Letter Content"/>
+</field>
+</table>
+<table id="sick_leave"><phrase id="tblcaption" value="sick leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="sickleavedays"><phrase id="fldcaption" value="Sick Leave Days"/>
+</field>
+<field id="sickleave_taken_date"><phrase id="fldcaption" value="Sick Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="special_leave"><phrase id="tblcaption" value="special leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="specialleavedays"><phrase id="fldcaption" value="Special Leave Days"/>
+</field>
+<field id="specialleave_taken_date"><phrase id="fldcaption" value="Special Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="terminated_employee"><phrase id="tblcaption" value="terminated employee"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="terminated_date"><phrase id="fldcaption" value="Terminated Date"/>
+</field>
+<field id="termination_reason"><phrase id="fldcaption" value="Termination Reason"/>
+</field>
+</table>
+<table id="terminated_employee_annual_leave"/>
+<table id="terminated_employee_disciplinary_action"/>
+<table id="terminated_employee_funeral_leave"/>
+<table id="terminated_employee_maternity_leave"/>
+<table id="terminated_employee_paternity_leave"/>
+<table id="terminated_employee_personal_record"/>
+<table id="terminated_employee_sick_leave"><phrase id="tblcaption" value="terminated employee sick leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="sickleavedays"><phrase id="fldcaption" value="Sick Leave Days"/>
+</field>
+<field id="sickleave_taken_date"><phrase id="fldcaption" value="Sick Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+</table>
+<table id="terminated_employee_special_leave"/>
+<table id="terminated_employee_wedding_leave"/>
+<table id="total_attendance_backup"/>
+<table id="total_deduction"/>
+<table id="training"/>
+<table id="upload"/>
+<table id="user_table"/>
+<table id="users"/>
+<table id="wedding_leave"><phrase id="tblcaption" value="wedding leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="weddingleavedays"><phrase id="fldcaption" value="Wedding Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="weddingleave_takendate"><phrase id="fldcaption" value="Wedding Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="week_1"/>
+<table id="week_2"/>
+<table id="week_3"/>
+<table id="week_4"/>
+<table id="week_5"/>
+<table id="week_6"/>
+<table id="weekattendance"/>
+<table id="total_deductionjulypayment"/>
+<table id="cholinesterase_test"><phrase id="tblcaption" value="cholinesterase test"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="lastresult"><phrase id="fldcaption" value="Last Result"/>
+</field>
+<field id="lasttestdate"><phrase id="fldcaption" value="Last Test Date"/>
+</field>
+<field id="firstresult"><phrase id="fldcaption" value="First Result"/>
+</field>
+<field id="firsttestdate"><phrase id="fldcaption" value="First Test Date"/>
+</field>
+<field id="firstdifference"><phrase id="fldcaption" value="First Difference"/>
+</field>
+<field id="secondresult"><phrase id="fldcaption" value="Second Result"/>
+</field>
+<field id="secondtestdate"><phrase id="fldcaption" value="Second Test Date"/>
+</field>
+<field id="seconddifference"><phrase id="fldcaption" value="Second Difference"/>
+</field>
+<field id="thirdresult"><phrase id="fldcaption" value="Third Result"/>
+</field>
+<field id="thirdtestdate"><phrase id="fldcaption" value="Third Test Date"/>
+</field>
+<field id="thirddifference"><phrase id="fldcaption" value="Third Difference"/>
+</field>
+<field id="forthresult"><phrase id="fldcaption" value="Forth Result"/>
+</field>
+<field id="forthtestdate"><phrase id="fldcaption" value="Forth Test Date"/>
+</field>
+<field id="forthdifference"><phrase id="fldcaption" value="Forth Difference"/>
+</field>
+</table>
+<table id="total_deductionbeforeimportednew"/>
+<table id="week_1julypayment"/>
+<table id="leavedays"/>
+<table id="total_attendance"><phrase id="tblcaption" value="total attendance"/>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="total_absent"><phrase id="fldcaption" value="Total Absent"/>
+</field>
+<field id="total_no_normal1"><phrase id="fldcaption" value="Total No normal 1"/>
+</field>
+<field id="total_no_normal2"><phrase id="fldcaption" value="Total No normal 2"/>
+</field>
+<field id="total_no_sunday"><phrase id="fldcaption" value="Total No Sunday"/>
+</field>
+<field id="total_no_holyday"><phrase id="fldcaption" value="Total No Holyday"/>
+</field>
+</table>
+<table id="totalleavedays"><phrase id="tblcaption" value="totalleavedays"/>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="total_leave_days"><phrase id="fldcaption" value="Total Leave Days"/>
+</field>
+<field id="month"><phrase id="fldcaption" value="MONTH"/>
+</field>
+<field id="year"><phrase id="fldcaption" value="YEAR"/>
+</field>
+</table>
+<table id="recruitmentperdeparment"><phrase id="tblcaption" value="Recruitment Per Deparment"/>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="recruited"><phrase id="fldcaption" value="Recruited"/>
+</field>
+</table>
+<table id="recruitmentperdepartment"><phrase id="tblcaption" value="Recruitment Per Department"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="employee"><phrase id="fldcaption" value="Employee"/>
+</field>
+<field id="place"><phrase id="fldcaption" value="Place"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="date"><phrase id="fldcaption" value="Date"/>
+</field>
+<field id="address"><phrase id="fldcaption" value="Address"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="transport_allowance"><phrase id="fldcaption" value="Transport Allowance"/>
+</field>
+<field id="hardship_allowance"><phrase id="fldcaption" value="Hardship Allowance"/>
+</field>
+<field id="position_allowance"><phrase id="fldcaption" value="Position Allowance"/>
+</field>
+<field id="department_name"><phrase id="fldcaption" value="Department Name"/>
+</field>
+<field id="recruited"><phrase id="fldcaption" value="Recruited"/>
+</field>
+<field id="housing_allowance"><phrase id="fldcaption" value="Housing Allowance"/>
+</field>
+</table>
+<table id="annual_leave"><phrase id="tblcaption" value="Annual Leave"/>
+<chart id="annual_leave_pie_chart"><phrase id="chartcaption" value="Annual Leave Pie Chart"/>
+</chart>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="leavedays"><phrase id="fldcaption" value="Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="leave_taken_date"><phrase id="fldcaption" value="Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="funeral_leave"><phrase id="tblcaption" value="Funeral Leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="funeralleavedays"><phrase id="fldcaption" value="Funeral Leave Days"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="funeralleave_taken_date"><phrase id="fldcaption" value="Funeral Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="sick_leave"><phrase id="tblcaption" value="Sick Leave"/>
+<chart id="sick_leave_per_department"><phrase id="chartcaption" value="Average Sick Leave Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="Sick Leave Days"/>
+</chart>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="sickleavedays"><phrase id="fldcaption" value="Sick Leave Days"/>
+</field>
+<field id="sickleave_taken_date"><phrase id="fldcaption" value="Sick Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="maternity_leave"><phrase id="tblcaption" value="Maternity Leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="maternityleavedays"><phrase id="fldcaption" value="Maternity Leave Days"/>
+</field>
+<field id="maternityleave_taken_date"><phrase id="fldcaption" value="Maternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="paternity_leave"><phrase id="tblcaption" value="Paternity Leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="paternityleavedays"><phrase id="fldcaption" value="Paternity Leave Days"/>
+</field>
+<field id="paternityleave_taken_date"><phrase id="fldcaption" value="Paternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="special_leave"><phrase id="tblcaption" value="Special Leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="specialleavedays"><phrase id="fldcaption" value="Special Leave Days"/>
+</field>
+<field id="specialleave_taken_date"><phrase id="fldcaption" value="Special Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="wedding_leave"><phrase id="tblcaption" value="Wedding Leave"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="weddingleavedays"><phrase id="fldcaption" value="Wedding Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="weddingleave_takendate"><phrase id="fldcaption" value="Wedding Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="total_leave_day_taken"><phrase id="tblcaption" value="Total Leave Day Taken"/>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="total_leave_days"><phrase id="fldcaption" value="Total Leave Days"/>
+</field>
+<field id="month"><phrase id="fldcaption" value="MONTH"/>
+</field>
+<field id="year"><phrase id="fldcaption" value="YEAR"/>
+</field>
+</table>
+<table id="total_attendance"><phrase id="tblcaption" value="Total Attendance"/>
+<chart id="total_absent_per_department"><phrase id="chartcaption" value="Total Employee Absent Hour Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="Total Absent"/>
+</chart>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="total_absent"><phrase id="fldcaption" value="Total Absent"/>
+</field>
+<field id="total_no_normal1"><phrase id="fldcaption" value="Total No normal 1"/>
+</field>
+<field id="total_no_normal2"><phrase id="fldcaption" value="Total No normal 2"/>
+</field>
+<field id="total_no_sunday"><phrase id="fldcaption" value="Total No Sunday"/>
+</field>
+<field id="total_no_holyday"><phrase id="fldcaption" value="Total No Holyday"/>
+</field>
+</table>
+<table id="employee_personal_record"><phrase id="tblcaption" value="Employee Personal Record"/>
+<chart id="number_of_employee_per_department"><phrase id="chartcaption" value="Number Of Employee Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="ID"/>
+</chart>
+<chart id="funner_chart_number_of__employee_per_department"><phrase id="chartcaption" value="Funner Chart Number of  Employee Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="ID"/>
+</chart>
+<chart id="employee_distribution"><phrase id="chartcaption" value="AQ Employee Distribution"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="ID"/>
+</chart>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="date_birth"><phrase id="fldcaption" value="Date Birth"/>
+</field>
+<field id="place_birth"><phrase id="fldcaption" value="Place Birth"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="zemail"><phrase id="fldcaption" value="Email"/>
+</field>
+<field id="date_employement"><phrase id="fldcaption" value="Date Employement"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="educational_status"><phrase id="fldcaption" value="Educational Status"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="martial_status"><phrase id="fldcaption" value="Martial Status"/>
+</field>
+<field id="children_number"><phrase id="fldcaption" value="Children number"/>
+</field>
+<field id="name_child"><phrase id="fldcaption" value="Name Child"/>
+</field>
+<field id="age_child"><phrase id="fldcaption" value="Age Child"/>
+</field>
+<field id="sex_child"><phrase id="fldcaption" value="Sex Child"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="Image"/>
+</field>
+<field id="experience"><phrase id="fldcaption" value="Experience"/>
+</field>
+<field id="hardcopy_shelf_no"><phrase id="fldcaption" value="Hard Copy Shelf No"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="telephone"><phrase id="fldcaption" value="Telephone"/>
+</field>
+</table>
+<table id="terminated_employee"><phrase id="tblcaption" value="Terminated Employee"/>
+<chart id="terminated_employee_per_department"><phrase id="chartcaption" value="Terminated Employee Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+<phrase id="chartyaxisname" value="ID"/>
+</chart>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="terminated_date"><phrase id="fldcaption" value="Terminated Date"/>
+</field>
+<field id="termination_reason"><phrase id="fldcaption" value="Termination Reason"/>
+</field>
+</table>
+<table id="transfered_out"><phrase id="tblcaption" value="Transfered Out"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="fromdepartment"><phrase id="fldcaption" value="From Department"/>
+</field>
+<field id="todepartment"><phrase id="fldcaption" value="To Department"/>
+</field>
+<field id="position_aftertransfered"><phrase id="fldcaption" value="Position After Transfered"/>
+</field>
+<field id="transfered_date"><phrase id="fldcaption" value="Transfered Date"/>
+</field>
+</table>
+<table id="tranfered_in"><phrase id="tblcaption" value="Tranfered In"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="fromdepartment"><phrase id="fldcaption" value="From Department"/>
+</field>
+<field id="todepartment"><phrase id="fldcaption" value="To Department"/>
+</field>
+<field id="position_aftertransfered"><phrase id="fldcaption" value="Position After Transfered"/>
+</field>
+<field id="transfered_date"><phrase id="fldcaption" value="Transfered Date"/>
+</field>
+</table>
+<table id="recruited_employee"><phrase id="tblcaption" value="Recruited Employee"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="employee"><phrase id="fldcaption" value="Employee"/>
+</field>
+<field id="place"><phrase id="fldcaption" value="Place"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="date"><phrase id="fldcaption" value="Date"/>
+</field>
+<field id="address"><phrase id="fldcaption" value="Address"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="housing_allowance"><phrase id="fldcaption" value="Housing Allowance"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="transport_allowance"><phrase id="fldcaption" value="Transport Allowance"/>
+</field>
+<field id="hardship_allowance"><phrase id="fldcaption" value="Hardship Allowance"/>
+</field>
+<field id="position_allowance"><phrase id="fldcaption" value="Position Allowance"/>
+</field>
+</table>
+<table id="annual_leave_per_deparmtent_summary"><phrase id="tblcaption" value="Annual Leave Summary Per Deparmtent"/>
+<chart id="annual_leave_per_department"><phrase id="chartcaption" value="Annual Leave Per Department"/>
+<phrase id="chartxaxisname" value="Department"/>
+</chart>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="leavedays"><phrase id="fldcaption" value="Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="leave_taken_date"><phrase id="fldcaption" value="Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="maternity__leave_per_department_summary"><phrase id="tblcaption" value="Funeral Leave Summary Per Department"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="maternityleavedays"><phrase id="fldcaption" value="Maternity Leave Days"/>
+</field>
+<field id="maternityleave_taken_date"><phrase id="fldcaption" value="Maternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="recruitment_per_department"><phrase id="tblcaption" value="Recruitment Per Department"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="employee"><phrase id="fldcaption" value="Employee"/>
+</field>
+<field id="place"><phrase id="fldcaption" value="Place"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="date"><phrase id="fldcaption" value="Date"/>
+</field>
+<field id="address"><phrase id="fldcaption" value="Address"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="department_name"><phrase id="fldcaption" value="Department Name"/>
+</field>
+<field id="recruited"><phrase id="fldcaption" value="Recruited"/>
+</field>
+<field id="housing_allowance"><phrase id="fldcaption" value="Housing Allowance"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="transport_allowance"><phrase id="fldcaption" value="Transport Allowance"/>
+</field>
+<field id="hardship_allowance"><phrase id="fldcaption" value="Hardship Allowance"/>
+</field>
+<field id="position_allowance"><phrase id="fldcaption" value="Position Allowance"/>
+</field>
+</table>
+<table id="paternity_leave_per_department_summary"><phrase id="tblcaption" value="Paternity Leave Per Department Summary"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="paternityleavedays"><phrase id="fldcaption" value="Paternity Leave Days"/>
+</field>
+<field id="paternityleave_taken_date"><phrase id="fldcaption" value="Paternity Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="funera_leave_per_department_summary"><phrase id="tblcaption" value="Funera Leave Per Department"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="funeralleavedays"><phrase id="fldcaption" value="Funeral Leave Days"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="funeralleave_taken_date"><phrase id="fldcaption" value="Funeral Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="sick_leave_per_department_summary"><phrase id="tblcaption" value="Sick Leave Per Department Summary"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="sickleavedays"><phrase id="fldcaption" value="Sick Leave Days"/>
+</field>
+<field id="sickleave_taken_date"><phrase id="fldcaption" value="Sick Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="special_leave_per_department_summary"><phrase id="tblcaption" value="Special Leave Per Department Summary"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="specialleavedays"><phrase id="fldcaption" value="Special Leave Days"/>
+</field>
+<field id="specialleave_taken_date"><phrase id="fldcaption" value="Special Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="wedding_leave_per_department_summary"><phrase id="tblcaption" value="Wedding Leave Per Department Summary"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="weddingleavedays"><phrase id="fldcaption" value="Wedding Leavedays"/>
+</field>
+<field id="restday"><phrase id="fldcaption" value="Rest Day"/>
+</field>
+<field id="weddingleave_takendate"><phrase id="fldcaption" value="Wedding Leave Taken Date"/>
+</field>
+<field id="reporton"><phrase id="fldcaption" value="Report On"/>
+</field>
+<field id="leavetype"><phrase id="fldcaption" value="Leave Type"/>
+</field>
+<field id="reported"><phrase id="fldcaption" value="Reported"/>
+</field>
+<field id="report_back_date"><phrase id="fldcaption" value="Report Back Date"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+</table>
+<table id="number_of_employee_per_department_summary"><phrase id="tblcaption" value="Number Of Employee Per Department Summary"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="date_birth"><phrase id="fldcaption" value="Date Birth"/>
+</field>
+<field id="place_birth"><phrase id="fldcaption" value="Place Birth"/>
+</field>
+<field id="age"><phrase id="fldcaption" value="Age"/>
+</field>
+<field id="sex"><phrase id="fldcaption" value="Sex"/>
+</field>
+<field id="zemail"><phrase id="fldcaption" value="Email"/>
+</field>
+<field id="date_employement"><phrase id="fldcaption" value="Date Employement"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="position"><phrase id="fldcaption" value="Position"/>
+</field>
+<field id="educational_status"><phrase id="fldcaption" value="Educational Status"/>
+</field>
+<field id="salary"><phrase id="fldcaption" value="Salary"/>
+</field>
+<field id="martial_status"><phrase id="fldcaption" value="Martial Status"/>
+</field>
+<field id="children_number"><phrase id="fldcaption" value="Children number"/>
+</field>
+<field id="name_child"><phrase id="fldcaption" value="Name Child"/>
+</field>
+<field id="age_child"><phrase id="fldcaption" value="Age Child"/>
+</field>
+<field id="sex_child"><phrase id="fldcaption" value="Sex Child"/>
+</field>
+<field id="photo"><phrase id="fldcaption" value="Photo"/>
+</field>
+<field id="image"><phrase id="fldcaption" value="Image"/>
+</field>
+<field id="experience"><phrase id="fldcaption" value="Experience"/>
+</field>
+<field id="hardcopy_shelf_no"><phrase id="fldcaption" value="Hard Copy Shelf No"/>
+</field>
+<field id="modifiedby"><phrase id="fldcaption" value="Modified By"/>
+</field>
+<field id="telephone"><phrase id="fldcaption" value="Telephone"/>
+</field>
+</table>
+<table id="cholinesterase_test"><phrase id="tblcaption" value="Cholinesterase Test"/>
+<field id="auto_id"><phrase id="fldcaption" value="Auto ID"/>
+</field>
+<field id="id"><phrase id="fldcaption" value="ID"/>
+</field>
+<field id="firstname"><phrase id="fldcaption" value="First Name"/>
+</field>
+<field id="middelname"><phrase id="fldcaption" value="Middel Name"/>
+</field>
+<field id="lastname"><phrase id="fldcaption" value="Last Name"/>
+</field>
+<field id="department"><phrase id="fldcaption" value="Department"/>
+</field>
+<field id="lastresult"><phrase id="fldcaption" value="Last Result"/>
+</field>
+<field id="lasttestdate"><phrase id="fldcaption" value="Last Test Date"/>
+</field>
+<field id="firstresult"><phrase id="fldcaption" value="First Result"/>
+</field>
+<field id="firsttestdate"><phrase id="fldcaption" value="First Test Date"/>
+</field>
+<field id="firstdifference"><phrase id="fldcaption" value="First Difference"/>
+</field>
+<field id="secondresult"><phrase id="fldcaption" value="Second Result"/>
+</field>
+<field id="secondtestdate"><phrase id="fldcaption" value="Second Test Date"/>
+</field>
+<field id="seconddifference"><phrase id="fldcaption" value="Second Difference"/>
+</field>
+<field id="thirdresult"><phrase id="fldcaption" value="Third Result"/>
+</field>
+<field id="thirdtestdate"><phrase id="fldcaption" value="Third Test Date"/>
+</field>
+<field id="thirddifference"><phrase id="fldcaption" value="Third Difference"/>
+</field>
+<field id="forthresult"><phrase id="fldcaption" value="Forth Result"/>
+</field>
+<field id="forthtestdate"><phrase id="fldcaption" value="Forth Test Date"/>
+</field>
+<field id="forthdifference"><phrase id="fldcaption" value="Forth Difference"/>
+</field>
+</table>
+</project>
+</ew-language>

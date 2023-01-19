@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSID" value="name:ID;datatype:string" />
-	<infoitem key="UD_RS" value="name:ID;datatype:string,name:Date;datatype:date" />
-</info>

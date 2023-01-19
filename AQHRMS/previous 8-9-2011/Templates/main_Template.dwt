@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: auto;
+}
+#wrrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 900px;
+	background-color: #999;
+}
+#headerspace {
+	background-color: #999;
+	height: 10px;
+	width: 1280px;
+}
+
+
+/* menu */
+.menu_nav {
+	margin:0;
+	padding:110px 20px 0 20px;
+	float:left;
+	width: 650px;
+}
+.menu_nav ul { list-style:none;}
+.menu_nav ul li { margin:0 4px; padding:0 8px 0 0; float:left; background:url(../_template/clearfocus/html/images/menu.gif) no-repeat right center;}
+.menu_nav ul li a { display:block; margin:0; padding:18px 16px; color:#fff; text-decoration:none; font-size:14px;}
+.menu_nav ul li.active a, .menu_nav ul li a:hover { background:url(../_template/clearfocus/html/images/menu_a.gif) repeat-x top;;}
+
+/* search */
+.searchform {
+	padding:50px 20px 0 0;
+	float:right;
+	width:188px;
+	left: 688px;
+	top: 125px;
+	height: 32px;
+}
+#formsearch {
+	margin:0;
+	padding:0 0 24px 0;
+}
+#formsearch span { display:block; margin:6px 0; padding:0 8px 0 11px !important; padding:0 4px 0 6px; float:right; width:183px; background:#fff url(../_template/clearfocus/html/images/search.gif) no-repeat top left;}
+#formsearch input.editbox_search { margin:0; padding:5px 0; float:left; width:180px; height:20px; border:none; background:none; font:normal 13px/20px Arial, Helvetica, sans-serif; color:#a8acb2;}
+#formsearch input.button_search { margin:6px 0 0 0; padding:0; border:none; float:right;}
+#header {
+	background-color: #FFF;
+	height: 240px;
+	top: 0px;
+	clip: rect(0px,auto,auto,auto);
+	width: 900px;
+}
+#headerimg {
+	background-image: url(../images/bg.jpg);
+	height: 180px;
+	width: 900px;
+}
+#mainnavigation {
+	height: 200px;
+	width: 100px;
+	color: #660;
+}
+#headerAdvert {
+	background-color: #FFF;
+	height: 72px;
+	width: 700px;
+	color: #F90;
+	font-size: 0px;
+	top: 0px;
+	clip: rect(0px,auto,auto,auto);
+}
+#sidebar {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	height: 700px;
+	width: 120px;
+	left: 650px;
+	top: 0px;
+	float: right;
+	color: #660;
+	font-weight: lighter;
+	font-size: 18px;
+	font-variant: normal;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+#footer {
+	background-color: #CCC;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 900px;
+	clear: both;
+	left: 7px;
+	top: 922px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#mainContent {
+	background-color: #FFF;
+	height: 700px;
+	top: auto;
+	clip: rect(0px,auto,auto,auto);
+	white-space: normal;
+	width: 780px;
+	float: left;
+	left: 60px;
+}
+#header #headerAdvert h1 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 100;
+	color: #333;
+}
+</style>
+</head>
+
+<body>
+<div id="headerspace"></div>
+<div id="wrrapper">
+
+<div class="active" id="header">
+  <div id="headerAdvert">
+    <H2 ><font  size="20" >Thekey</font><span id="headerAdvert"><font color="#999999" size="20" >HRMS</font><font color="#999999" size="3" >    Bringing ICT Soultion to You.</font>  </span> <font color="#999999" size="3" >The key is yours!!</font></h2>
+</div>
+    <div id="headerimg">
+      <div class="menu_nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../support.html">Recriument</a></li>
+          <li><a href="../about.html">Leave</a></li>
+          <li><a href="../blog.html">Benfite</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+        </ul>
+      </div>
+  </div>
+<div id="mainContent"></div>
+  
+  <div id="sidebar">
+    <p>&nbsp;</p>
+  </div>
+  <div id="footer">
+    <p class="lf">&copy; Copyright ThkeHRMS. Designed by <a href="http://www.bluewebtemplates.com">Thekey ICT Soultion</a></p>
+  </div>
+  
+</div>
+</body>
+</html>

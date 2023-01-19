@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSPromotionDisplay" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Evaluation_Result;datatype:real,name:Position_Before_Promotion;datatype:string,name:Position_After_Promotion;datatype:string,name:Department_Before_Promotion;datatype:string,name:Department_After_Promotion;datatype:string,name:Salary_Before_Promotion;datatype:int,name:Salary_After_Promotion;datatype:int,name:Promotion_Date;datatype:date" />
+</info>

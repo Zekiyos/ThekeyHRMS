@@ -2,17 +2,17 @@
 #	Thekey HRMS
 
 # About implementation
-** It is first Developed on April 2011 and Implemented first on Sher Ethiopia PLC production server on August 13 2011.**
+** It is  Developed according to AQ Roses Plc policy and requirements and Implemented on AQ Roses Plc production server on October 22 2011.**
 
 # About database Schema
 ** database Schema and data placed on the root folder of database Schema and data for the intial projects
-* sherhrmsdb.sql and payrolldb.sql
+* aqhrmsdb.sql and payrolldb.sql
 
 # HOW to USE Thekey HRMS 
-** Developed by customized for Sher Ethiopia PLC 
-** 1. Move the Directory SHERHRMS to the root directory folder
-** 2. Use sherhrmsdb.sql and payrolldb.sql files to crat the system database schema and data from the folder of database
-** 3. Use URL http://localhost/ThekeyHRMS/SHERHRMS/ to access the system
+** Developed by customized for AQ Roses PLC 
+** 1. Move the Directory AQHRMS to the root directory folder
+** 2. Use aqhrmsdb.sql and payrolldb.sql files to create the system database schema and data from database directory
+** 3. Use URL http://localhost/ThekeyHRMS/AQHRMS/ to access the system
 
 #	Information about Updates: 
 

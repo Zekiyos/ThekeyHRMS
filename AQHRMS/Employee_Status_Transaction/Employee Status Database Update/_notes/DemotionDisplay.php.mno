@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSDemotionDisplay" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Evaluation_Result;datatype:real,name:Position_Before_Demotion;datatype:string,name:Position_After_Demotion;datatype:string,name:Department_Before_Demotion;datatype:string,name:Department_After_Demotion;datatype:string,name:Salary_Before_Demotion;datatype:int,name:Salary_After_Demotion;datatype:int,name:Demotion_Date;datatype:date" />
+</info>

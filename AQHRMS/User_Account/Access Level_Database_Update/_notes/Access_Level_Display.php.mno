@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSAccessLevelDisplay" value="name:Page_Description;datatype:blob,name:PageName;datatype:blob,name:Granted_Access_Level;datatype:blob" />
+	<infoitem key="UD_RSAccessLevel" value="name:Page_Description;datatype:blob,name:PageName;datatype:blob,name:Granted_Access_Level;datatype:blob" />
+</info>
