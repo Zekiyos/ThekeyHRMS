@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSALNotification" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Leavedays;datatype:int,name:RestDay;datatype:int,name:Leave_Taken_Date;datatype:date,name:ReportOn;datatype:date,name:LeaveType;datatype:string,name:UserName;datatype:string" />
-	<infoitem key="UD_RSPersonalInfoDetailNotification" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Department;datatype:string,name:Position;datatype:string,name:Date_Employement;datatype:date,name:Attendance;datatype:string,name:Motivation;datatype:string,name:Performance_Individual;datatype:string,name:Performance_Group;datatype:string,name:Communication_Supervisor;datatype:string,name:Manger_Remark;datatype:string,name:HR_Opinon;datatype:string,name:Date;datatype:date,name:Result;datatype:string" />
-</info>

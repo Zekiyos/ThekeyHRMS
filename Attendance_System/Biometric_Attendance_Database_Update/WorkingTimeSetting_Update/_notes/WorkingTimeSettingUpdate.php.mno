@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSWorkingTimeDepartmentUpdate" value="name:Department;datatype:string,name:From_Date;datatype:date,name:To_Date;datatype:date,name:Start;datatype:time,name:Start_Break;datatype:time,name:End_Break;datatype:time,name:End;datatype:time" />
+</info>

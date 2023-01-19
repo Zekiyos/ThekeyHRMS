@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSOTIndividualUpdate" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Department;datatype:string,name:From_Date;datatype:date,name:To_Date;datatype:date,name:DayOT;datatype:string,name:DayOT_MaxHR;datatype:time,name:NightOT;datatype:string,name:NightOT_MaxHR;datatype:time,name:SundayOT;datatype:string,name:HolydayOT;datatype:string,name:DayOT_Start;datatype:time,name:NightOT_Start;datatype:time,name:NightOT_End;datatype:time" />
+</info>

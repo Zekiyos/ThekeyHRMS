@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSRecruitmentUpdate" value="name:Auto_ID;datatype:int,name:Employee;datatype:string,name:Place;datatype:string,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Age;datatype:int,name:Sex;datatype:string,name:Photo;datatype:string,name:Date;datatype:date,name:Address;datatype:string,name:Department;datatype:string,name:Position;datatype:string,name:Salary;datatype:real,name:Transport_Allowance;datatype:real,name:Hardship_Allowance;datatype:real,name:Housing_Allowance;datatype:real,name:Position_Allowance;datatype:real" />
-</info>

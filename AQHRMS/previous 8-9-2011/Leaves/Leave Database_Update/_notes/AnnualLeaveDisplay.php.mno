@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSAnnualLeaveDisplay" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Leavedays;datatype:int,name:RestDay;datatype:int,name:Leave_Taken_Date;datatype:date,name:ReportOn;datatype:date,name:LeaveType;datatype:string,name:ModifiedBy;datatype:string,name:Reported;datatype:string,name:Report_Back_Date;datatype:date" />
-	<infoitem key="UD_RSAnnualLeaveDsiplay" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Leavedays;datatype:int,name:RestDay;datatype:int,name:Leave_Taken_Date;datatype:date,name:ReportOn;datatype:date,name:LeaveType;datatype:string,name:ModifiedBy;datatype:string,name:Reported;datatype:string,name:Report_Back_Date;datatype:date" />
-</info>

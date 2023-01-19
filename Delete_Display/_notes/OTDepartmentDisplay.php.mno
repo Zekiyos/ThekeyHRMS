@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSOTDisplayDepartmental" value="name:Department;datatype:string,name:From_Date;datatype:date,name:To_Date;datatype:date,name:DayOT;datatype:string,name:DayOT_MaxHR;datatype:time,name:NightOT;datatype:string,name:NightOT_MaxHR;datatype:time,name:SundayOT;datatype:string,name:HolydayOT;datatype:string,name:DayOT_Start;datatype:time,name:NightOT_Start;datatype:time,name:NightOT_End;datatype:time,name:Section;datatype:string,name:Sub Section;datatype:string,name:Group;datatype:string,name:Department;datatype:string" />
+</info>

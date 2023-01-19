@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: auto;
+}
+#wrrapper {
+	margin: 0 auto;
+	text-align: left;
+	width: 900px;
+	background-color: #999;
+}
+#headerspace {
+	background-color: #999;
+	height: 10px;
+	width: 1280px;
+}
+
+
+/* menu */
+.menu_nav {
+	margin:0;
+	padding:-15px 20px 0 20px;
+	float:left;
+	width: auto;
+}
+.menu_nav ul { list-style:none;}
+.menu_nav ul li { margin:0 4px; padding:0 8px 0 0; float:left; background:url(../_template/clearfocus/html/images/menu.gif) no-repeat right center;}
+.menu_nav ul li a {
+	display:block;
+	margin:0;
+	padding:18px 16px;
+	color:#F60;
+	text-decoration:none;
+	font-size:14px;
+}
+.menu_nav ul li.active a, .menu_nav ul li a:hover { background:url(../_template/clearfocus/html/images/menu_a.gif) repeat-x top;;}
+#header {
+	background-color: #FFF;
+	height: 300px;
+	top: 0px;
+	clip: rect(0px,auto,auto,auto);
+	width: 900px;
+}
+#sidemenu {
+	font-size: 14px;
+	font-weight: normal;
+	color: #F60;
+	background-color: #CCC;
+	height: 350px;
+	width: 120px;
+}
+#sidecontent {
+	color: #F60;
+	height: 400px;
+	width: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#headerimg {
+	height: 60px;
+	width: auto;
+	background-color: #FFF;
+	background-image: url("../images/fade.jpg");
+}
+#mainnavigation {
+	height: 200px;
+	width: 100px;
+	color: #660;
+}
+#headerAdvert {
+	background-color: #FFF;
+	height: 120px;
+	width: 870px;
+	color: #F90;
+	font-size: 14px;
+	top: 0px;
+	clip: rect(0px,auto,auto,auto);
+}
+#sidebar {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 0px;
+	height: 700px;
+	width: 120px;
+	left: 650px;
+	top: 0px;
+	float: right;
+	color: #F60;
+	font-weight: lighter;
+	font-size: 18px;
+	font-variant: normal;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+#footer {
+	background-color: #999;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 900px;
+	clear: both;
+	left: 7px;
+	top: 922px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#mainContent {
+	background-color: #FFF;
+	height: 900px;
+	width: 780px;
+	float: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: normal;
+	color: #000;
+	text-align: left;
+}
+#header #headerAdvert h1 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 100;
+	color: #333;
+}
+a:link {
+	color: #F30;
+	text-decoration: underline;
+}
+a:visited {
+	color: #F60;
+	text-decoration: underline;
+}
+a:hover {
+	color: #03F;
+	text-decoration: none;
+	
+}
+a:active {
+	color: #F30;
+}
+a {
+	font-size: 16px;
+}
+</style>

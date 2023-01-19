@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSSalaryIncrementDisplay" value="name:Initial_Salary;datatype:int,name:No_Year;datatype:real,name:Salary_Increment;datatype:int" />
+</info>

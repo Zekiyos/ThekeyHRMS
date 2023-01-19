@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#id_list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 720px;
+
+}
+#id_list > li {
+    border-bottom: 1px dotted black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+#id_list > li:first-child {
+    margin-top: 0;
+}
+.id {
+    border-bottom: 3px solid #9E0720;
+    height: 250px;
+    overflow: hidden;
+    width: 360px;
+}
+.id > * {
+    overflow: hidden;
+    width: 100%;
+}
+.id_head > img {
+    background: none repeat scroll 0 0 #231F20;
+    border-bottom: 8px solid #231F20;
+}
+.id_head > * {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.id_head a {
+    font-size: 12px;
+}
+.id_head > ul {
+    border-bottom: 4px solid #231F20;
+    font-size: 12.4px;
+    list-style: none outside none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+.redfox_address li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.redfox_address li:last-child {
+    float: right;
+}
+ul li {
+    float: left;
+}
+.id_content {
+    background: url("../id_card/main_bg.png") repeat scroll 0 0 transparent;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    position: relative;
+}
+.id_content > * {
+    float: left;
+    overflow: hidden;
+}
+.id_content .left_content {
+    height: 133px;
+    width: 217px;
+}
+.id_content .right_content {
+    float: right;
+    margin-right: 20px;
+}
+.id_content .right_content img {
+    border: 2px solid #231F20;
+    border-radius: 0 30px 0 30px;
+    height: 119px;
+    padding: 2px;
+    width: 114px;
+}
+.left_content > label:first-child {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.left_content > label {
+    clear: both;
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.left_content > label:last-child {
+    color: #A90E1A;
+    font-family: "Tw Cen MT";
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding-left: 20px;
+    text-align: left;
+    width: 212px;
+}
+.id_content .full_name, .id_content .department {
+    color: #A90E1A;
+    font-family: "Tw Cen MT";
+    font-size: 14px;
+    font-weight: bold;
+}
+.id_content .position {
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.id .bottom_line {
+    background: url("../id_card/line.png") repeat scroll 0 0 transparent;
+    height: 4px;
+}
+.red_fox_id > * {
+    float: left;
+}
+.id_back {
+    background: url("../id_card/back.jpg") repeat scroll 0 0 transparent;
+    border-bottom: 3px solid #9E0720;
+    height: 250px;
+    overflow: hidden;
+    width: 360px;
+}
+.back_content {
+    background: url("../id_card/red.png") no-repeat scroll 9% 48% transparent;
+    border-left: 2px solid white;
+    height: 165px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 11px;
+    position: relative;
+}
+.camp_name {
+    border-bottom: 10px solid #231F20;
+    height: 62px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-top: 2px;
+}
+.back_content label {
+    clear: both;
+    display: block;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.back_content label:last-child {
+    padding-top: 20px;
+    position: relative;
+}
+.back_content img {
+    left: 117px;
+    position: absolute;
+    top: 6px;
+}
+.back_content label:last-child {
+    margin-left: -18px;
+}
+.back_content label:last-child > span {
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+.back_content label:last-child > span:last-child {
+    border-top: 1px solid;
+    padding-top: 15px;
+}
+.back_content label > span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.back_content label > span > span {
+    text-decoration: underline;
+}
+.seal {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    left: 131px;
+    position: absolute;
+    top: 73px;
+    width: 133px;
+}
+.sign {
+    left: 242px !important;
+    position: absolute;
+    top: 85px !important;
+}

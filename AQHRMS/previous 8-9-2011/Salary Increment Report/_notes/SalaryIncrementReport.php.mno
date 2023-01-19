@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSSalaryIncrement" value="name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:Department;datatype:string,name:Date_employement;datatype:date,name:Salary;datatype:int,name:This_year_Increment;datatype:real,name:Increment;datatype:real" />
-</info>

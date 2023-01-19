@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSCourtCaseDelete" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Department;datatype:string,name:FileNumber;datatype:string,name:FileDate;datatype:date,name:ClaimAmount;datatype:real,name:AdvocateName;datatype:string,name:AppointmentDate;datatype:date,name:Court;datatype:string,name:Case;datatype:string,name:Result;datatype:string,name:Decision;datatype:string,name:Case_Status;datatype:string" />
-</info>

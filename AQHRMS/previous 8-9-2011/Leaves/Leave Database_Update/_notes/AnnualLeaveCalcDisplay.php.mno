@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_RSAnnualLeaveCalcDisplay" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:WorkingMonth;datatype:int,name:WorkingYear;datatype:int,name:ThisYearALdays;datatype:int,name:LastYearALdays;datatype:int,name:BeforeLastYearALdays;datatype:int,name:TotalALdays;datatype:int,name:TotalTakenDay;datatype:int,name:TotalLeftDay;datatype:int,name:Calculated_Date;datatype:date,name:ModifiedBy;datatype:string,name:BeforeLastYearLeft;datatype:int,name:LastYearLeft;datatype:int,name:ThisYearLeft;datatype:int" />
-</info>

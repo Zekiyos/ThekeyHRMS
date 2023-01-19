@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_rsdepartment" value="name:Department;datatype:string" />
-	<infoitem key="UD_rsform" value="name:Fname;datatype:string,name:Lname;datatype:string,name:Gname;datatype:string,name:Age;datatype:int,name:Sex;datatype:string,name:ID;datatype:string,name:Photo;datatype:blob" />
-</info>
