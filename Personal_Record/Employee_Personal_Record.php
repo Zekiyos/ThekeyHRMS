@@ -103,7 +103,7 @@
                     , 'Sex' => $_POST['Sex']
                     , 'Department' => $_POST['Department']
                     , 'Position' => $_POST['Position']
-                    , 'Salary' => trim($_POST['Salary'])
+                  //  , 'Salary' => trim($_POST['Salary'])
                     , 'ModifiedBy' => $_SESSION['MM_Username']);
 
                 $mydb->where(array('ID' => $_POST['ID']));
@@ -261,11 +261,29 @@
 
 
                         </tr>
-                        <tr valign="baseline">
-                            <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Position', $lang); ?>:</td>
+                        <!--tr valign="baseline">
+                            <td nowrap="nowrap" align="right"><?php e//cho $obj_lang->get('Position', $lang); ?>:</td>
                             <td><input type="text" name="Position"
-                                       value="<?php echo isset($employee['Position']) ? $employee['Position'] : '' ?>"
+                                       value="<?php //echo isset($employee['Position']) ? $employee['Position'] : '' ?>"
                                        size="32" /></td>
+                        </tr-->
+						  <tr valign="baseline">
+                            <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Position', $lang); ?>:</td>
+                            <td>
+                                 <?php
+                                $mydb1 = new DataBase();
+                                $mydb1->select('DISTINCT Position');
+                                $mydb1->where('Position!=', '');
+                                $mydb1->order_by('Position');
+                                $result1 = $mydb1->get('department_position');
+                                $position_list = $result1['result'];
+                                if ($result1) {
+                                    $my_form1 = new Form();
+                                    echo $my_form1->dropdown($position_list, 'Position', 'Position', array('name' => 'Position', 'id' => 'Position'), isset($employee['Position']) ? $employee['Position'] : '');
+                                }
+                                ?>
+                               
+                            </td>
                         </tr>
                         <tr valign="baseline">
                             <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Educational Status', $lang); ?>:</td>
@@ -276,7 +294,7 @@
                         <tr valign="baseline">
                             <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Salary', $lang); ?>:</td>
                             <td>
-                                <input   required="required"   type="text" name="Salary"
+                                <input      type="text" name="Salary" readonly="readonly"
                                          value="<?php echo isset($employee['Salary']) ? $employee['Salary'] : '' ?> "
                                          size="10"  />
                             </td>

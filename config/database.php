@@ -25,10 +25,17 @@ class db_config {
     public $password_HRMS;
 
     function __construct() {
-        $this->hostname_HRMS = "localhost";
-        $this->database_HRMS = "thekeyhrmsdb_sher";
-        $this->username_HRMS = "root";
-        $this->password_HRMS = "";//
+	//$this->hostname_HRMS = "localhost";
+	//$this->database_HRMS = "ThekeyHRMSDB";
+	//$this->username_HRMS = "root";
+	//$this->password_HRMS = "EWSadmin";
+	
+	echo "Please Don't Check Force Import, If you aready Import once.It slows down the server.";
+	echo "<center><hr><b><h1>Please Wait a moment ...<br/><br/>
+	Thekey HRMS is Blocked for temporarily!</h1></b>For more information call <i>+251-46-4414040 or +251-46-4412273</i></center>";
+	echo "<a href='http://192.168.1.201/thekeyhrms_ci/index.php/Users/login' > Thekey HRMS New Version</a>";
+	exit();
+
     }
 
 }

@@ -162,7 +162,7 @@
                         </tr>
                         <tr valign="baseline">
                             <td height="36" align="right" nowrap="nowrap"><?php echo $obj_lang->get('Special Leave Days', $lang); ?>:</td>
-                            <td><input type="text" id="total_leave_day" name="SpecialLeaveDays" value="" size="4" readonly="readonly" /></td>
+                            <td><input type="text" id="total_leave_day" min="1" max="30" name="SpecialLeaveDays" value="" size="4" readonly="readonly" /></td>
                         </tr>
                         <tr valign="baseline">
                             <td height="34" align="right" nowrap="nowrap"><?php echo $obj_lang->get('Special Leave Taken Date', $lang); ?>:</td>

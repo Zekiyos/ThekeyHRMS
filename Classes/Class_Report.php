@@ -443,7 +443,7 @@ class Report {
         if ($No_Record[0] <= intval($totalRows)) {
             echo ' Record Per Page:';
             echo '<Select ID="NO_Record" Name="NO_Record" onchange="updateQueryStringParameter(\'NO_Record\')" >';
-            echo '<option value="10"></option>';
+            echo '<option value="50"></option>';
 
             foreach ($No_Record as $key => $value) {
                 if ($value < intval($totalRows)) {

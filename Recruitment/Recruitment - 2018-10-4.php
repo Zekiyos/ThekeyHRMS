@@ -117,16 +117,7 @@
             $RSDepartment = mysql_query($query_RSDepartment, $HRMS) or die(mysql_error());
             $row_RSDepartment = mysql_fetch_assoc($RSDepartment);
             $totalRows_RSDepartment = mysql_num_rows($RSDepartment);
-			
-			 mysql_select_db($database_HRMS, $HRMS);
-            $query_RSPosition= "SELECT * FROM department_position ORDER BY Position ASC";
-            $RSPosition = mysql_query($query_RSPosition, $HRMS) or die(mysql_error());
-            $row_RSPosition = mysql_fetch_assoc($RSPosition);
-            $totalRows_RSPosition = mysql_num_rows($RSPosition);
-			
             ?>
-			
-
             <?php require_once $base_path . 'Templates/header.php'; ?>
 
             <div id="mainContent"><!-- InstanceBeginEditable name="MainContent" -->
@@ -246,7 +237,7 @@
                             <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Sex', $lang); ?>:</td>
                             <td valign="baseline"><table>
                                     <tr>
-                                        <td><input required="required"    type="radio" name="Sex" value="M" <?php
+                                        <td><input required="required"    type="radio" name="Sex" value="Male" <?php
                                 if (!(strcmp("Female", "Male"))) {
                                     echo "checked=\"checked\"";
                                 }
@@ -254,7 +245,7 @@
                                             <?php echo $obj_lang->get('Male', $lang); ?></td>
                                     </tr>
                                     <tr>
-                                        <td><input required="required"    type="radio" name="Sex" value="F" <?php
+                                        <td><input required="required"    type="radio" name="Sex" value="Female" <?php
                                             if (!(strcmp("Female1", "Female"))) {
                                                 echo "checked=\"checked\"";
                                             }
@@ -290,7 +281,7 @@
                                     $rows = mysql_num_rows($RSDepartment);
                                     if ($rows > 0) {
                                         mysql_data_seek($RSDepartment, 0);
-                                        $row_RSPosition = mysql_fetch_assoc($RSDepartment);
+                                        $row_RSDepartment = mysql_fetch_assoc($RSDepartment);
                                     }
                                     ?>
                                 </select>
@@ -317,30 +308,10 @@
                             ?>
                             </td>
                         </tr>
-                        <!--tr valign="baseline">
+                        <tr valign="baseline">
                             <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Position', $lang); ?>:</td>
                             <td>
                                 <input   required="required"   type="text" name="Position" value="" size="32" />
-                            </td-->
-							
-							  <tr valign="baseline">
-                            <td nowrap="nowrap" align="right"><?php echo $obj_lang->get('Position', $lang); ?>:</td>
-                            <td>
-                                <select   required="required"   name="Position" >
-                                    <option value=""><?php echo $obj_lang->get('Choose Position', $lang); ?></option>
-                                    <?php
-                                    do {
-                                        ?>
-                                        <option value="<?php echo $row_RSPosition['Position'] ?>"><?php echo $row_RSPosition['Position'] ?></option>
-                                        <?php
-                                    } while ($row_RSPosition = mysql_fetch_assoc($RSPosition));
-                                    $rows = mysql_num_rows($RSPosition);
-                                    if ($rows > 0) {
-                                        mysql_data_seek($RSPosition, 0);
-                                        $row_RSPosition = mysql_fetch_assoc($RSPosition);
-                                    }
-                                    ?>
-                                </select>
                             </td>
                         </tr>
                         <tr valign="baseline">

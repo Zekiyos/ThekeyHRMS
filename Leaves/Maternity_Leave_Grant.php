@@ -145,7 +145,7 @@
                         <tr valign="baseline">
                             <td height="36" align="right" nowrap="nowrap"><?php echo $obj_lang->get('Maternity Leave Days', $lang); ?>:</td>
                             <td>
-                                <input type="number" id="total_leave_day" min="1" max="90" name="MaternityLeaveDays" value="" size="4" readonly="readonly" /> 
+                                <input type="number" id="total_leave_day" min="120" max="123" name="MaternityLeaveDays" value="" size="4" readonly="readonly" /> 
                             </td>
                         </tr>
                         <tr valign="baseline">

@@ -153,7 +153,7 @@ $yearMonth_date = mktime(0, 0, 0,(int) substr($_POST['To_Date'], 5, 2),(int) sub
                         if (strtoupper($_GET['Year_Month']) == strtoupper("Attendance_Allocation")) {
                             $objAS->generateAttendanceSummary($_POST['Department'], $_POST['From_Date'], $_POST['To_Date']);
                         } else {
-                            $objAS->displayAttendanceSummary($_POST['Department'], $_GET['Year_Month']);
+                            $objAS->display_attendance_summary_both_manual_biometric($_POST['Department'], $_GET['Year_Month']);
                         }
 
 
