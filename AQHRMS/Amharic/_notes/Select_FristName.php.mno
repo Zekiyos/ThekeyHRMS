@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSID" value="name:ID;datatype:string" />
+	<infoitem key="UD_RSFirtsName" value="name:FristName;datatype:string" />
+	<infoitem key="UD_RSFristName" value="name:FristName;datatype:string" />
+	<infoitem key="UD_RSFirstName" value="name:FirstName;datatype:string" />
+</info>

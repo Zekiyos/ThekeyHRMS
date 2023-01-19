@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSFuneralLeaveGrant" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:FuneralLeaveDays;datatype:int,name:FuneralLeave_Taken_Date;datatype:date,name:ReportOn;datatype:date" />
+	<infoitem key="UD_RSPersonalRecord" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Date_Birth;datatype:date,name:Place_Birth;datatype:string,name:Age;datatype:int,name:Sex;datatype:string,name:Email;datatype:string,name:Date_Employement;datatype:date,name:Department;datatype:string,name:Position;datatype:string,name:Educational_Status;datatype:string,name:Martial_Status;datatype:string,name:Childeren_number;datatype:int,name:Name_Child;datatype:string,name:Age_Child;datatype:int,name:Sex_Child;datatype:string,name:Photo;datatype:string" />
+</info>

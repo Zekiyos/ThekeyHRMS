@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSWeddingLeaveGrant" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:WeddingLeavedays;datatype:int,name:WeddingLeave_TakenDate;datatype:date,name:ReportOn;datatype:date" />
+</info>
