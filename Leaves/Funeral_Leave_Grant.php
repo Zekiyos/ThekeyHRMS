@@ -150,7 +150,7 @@
                         </tr>
                         <tr valign="baseline">
                             <td  align="right" nowrap="nowrap"><?php echo $obj_lang->get('Funeral Leave Days', $lang); ?>:</td>
-                            <td><input type="number" min="1" max="5" required="required" id="Leavedays" name="FuneralLeaveDays" value="0" size="4" /></td>
+                            <td><input type="number" min="3" max="5" required="required" id="Leavedays" name="FuneralLeaveDays" value="0" size="4" /></td>
                         </tr>
                         <tr valign="baseline">
                             <td  align="right" nowrap="nowrap"><?php echo $obj_lang->get('Rest days', $lang); ?>:</td>

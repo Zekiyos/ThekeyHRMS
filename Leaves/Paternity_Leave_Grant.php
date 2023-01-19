@@ -152,7 +152,7 @@
                         </tr>
                         <tr valign="baseline">
                             <td height="36" align="right" nowrap="nowrap"><?php echo $obj_lang->get('Paternity Leave Days', $lang); ?>:</td>
-                            <td><input type="number" required="required" id="total_leave_day"  name="PaternityLeaveDays" value="" size="4" readonly="readonly"/></td>
+                            <td><input type="number" required="required" id="total_leave_day"  min="3" max="3"  name="PaternityLeaveDays" value="" size="4" readonly="readonly"/></td>
                         </tr>
                         <tr valign="baseline">
                             <td height="34" align="right" nowrap="nowrap"><?php echo $obj_lang->get('Paternity Leave Taken Date', $lang); ?>:</td>

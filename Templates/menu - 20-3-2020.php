@@ -101,9 +101,7 @@ $menu_list = array(
         //'Attendance Cleaner' => 'Attendance_System/Attendance_Cleaner.php',
         'Attendance Summarizer' => 'Attendance_System/Attendance_Summarizer.php',
         'Attendance User' => 'Attendance_System/Attendance_User.php',
-        'Attendance Summary' => 'Attendance_System/Attendance_Summary.php',
-		'Attendance Summary both Manual & Biometric' => 'Attendance_System/Attendance_Summary_both_manual_biometric.php',
-		'Attendance Summary Manual' => 'Attendance_System/Attendance_Summary_both_manual_biometric.php'
+        'Attendance Summary' => 'Attendance_System/Attendance_Summary.php'
     ),
 	'Report' => array(
 	'Production Managment System' => array(

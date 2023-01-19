@@ -9,10 +9,10 @@
 //include($appRoot.'Classes/Class_Connection.php');
 
 
-       $hostName ="localhost";
+       $hostName ="192.168.1.201";
         $userName = "root";
-        $password = "";
-        $dbName = "Thekeyhrmsdb_sher";
+        $password = "EWSadmin";
+        $dbName = "TheKeyHRMSDB";
         
 $ThekeyHRMSCon= mysql_pconnect($hostName,$userName,$password) or trigger_error(mysql_error(),E_USER_ERROR);
 

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSDepartmentDisplay" value="name:Section;datatype:string,name:Sub Section;datatype:string,name:Group;datatype:string,name:Department;datatype:string" />
+</info>

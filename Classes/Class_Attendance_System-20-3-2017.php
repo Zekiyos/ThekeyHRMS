@@ -4113,7 +4113,7 @@ From Attendance_Allocation WHERE ID='" . $ID . "' and attendance_allocation.Date
         $count = 0;
         $numrows = mysql_numrows($result);
         while ($rowAS = mysql_fetch_assoc($result, MYSQL_ASSOC)) {
-            
+            $count++;
             $ID = $rowAS['ID'];
             $workingDay = $this->getWorkingDay($ID, $Attendance_Opening_Date, $Attendance_Closing_Date);
 
@@ -4137,14 +4137,10 @@ From Attendance_Allocation WHERE ID='" . $ID . "' and attendance_allocation.Date
             //}
 			//if($rowAS['Date_Employement'] <= '2016-03-31'){
 
-			if ($totalSumDays > 26) {
+			 if ($totalSumDays > 26) {
 			 
-			 if(($totalOffDay>0)&&($rowAS['Date_Employement'] <= date("Y-m-t", strtotime($Attendance_Opening_Date)))){
-			 $sqlpt="select*from `probation_period_terminated_employee` Where ID='".$ID."'";
-			   $resultpt=mysql_query($sqlpt);
-			   $numrowspt=mysql_numrows($resultpt);
-			   if($numrowspt==0)
-                $workingDay = 26- ($totalLeaveDay + $totalAbsentDay);}
+			 if(($totalOffDay>0)&&($rowAS['Date_Employement'] <= date("Y-m-t", strtotime($Attendance_Opening_Date))))
+                $workingDay = 26- ($totalLeaveDay + $totalAbsentDay);
 				else
 				 $totalAbsentDay=26-$workingDay ;
 				
@@ -4153,38 +4149,32 @@ From Attendance_Allocation WHERE ID='" . $ID . "' and attendance_allocation.Date
 			
 			//}
 			
-			if(($totalSumDays < 26)&&(date("d",strtotime($Attendance_Closing_Date)))==20) {   //&& ($totalOffDay > 4)){
+			 if(($totalSumDays < 26) && ($totalOffDay > 4)){
 			// echo '<hr>1'.$totalSumDays.'---'.$ID.'--'.$workingDay; 
 			
                $diff1 = 26-$totalSumDays;
-			 //  $workingDay += $diff1;
-			  if($rowAS['Date_Employement'] <= $Attendance_Opening_Date){
-                $workingDay += $diff1;
-				}else{
-				$totalAbsentDay+= $diff1;
-				}
+			   $workingDay += $diff1;
+			 // if($rowAS['Date_Employement'] <= '2016-02-20'){
+              //  $workingDay += $diff1;
+				//}else{
+				//$totalAbsentDay+= $diff1;
+				//}
 				
           //echo '<hr>2'.$ID.'--'.$workingDay;                
             }
 			
-			
-			//For February 28 Leap Year Closing month e.g 2015-02-21 to 2015-03-20
+			//For February closing month e.g 2015-02-21 to 2015-03-20
 			//date('m',$Attendance_Opening_Date)
 
-						/*if(($totalSumDays < 26) ){
+			/*			if(($totalSumDays < 26) ){
                
 			   if($rowAS['Date_Employement'] < $Attendance_Opening_Date){
-			   $sqlpt="select*from `probation_period_terminated_employee` Where ID='".$ID."'";
-			   $resultpt=mysql_query($sqlpt);
-			   $numrowspt=mysql_numrows($resultpt);
-			   if($numrowspt==0){
-		       $diff1 = 26-$totalSumDays;
-                $workingDay = $workingDay + $diff1;	
-				$totalSumDays = $totalSumDays + $diff1;
-              } }	
+             $diff1 = 26-$totalSumDays;
+                $workingDay = $workingDay + $diff1;				
+              }			
 		  
-           }*/
-			
+            }
+			*/
 			
             
             /* additional 10 hour OT for Harvesting, Line Manger,Vocom Operator,Transport Irrigation and Spray Department
@@ -4208,7 +4198,7 @@ From Attendance_Allocation WHERE ID='" . $ID . "' and attendance_allocation.Date
                 $workingDay = 0;
 				
             }
-			 if (($summarize)&&( $totalDays>0)&&($rowAS['Date_Employement'] <=$Attendance_Closing_Date )) {
+			 if (($summarize)&&( $totalDays>0)) {
 			 
 			  $sqlchk = "SELECT * FROM Biometric_Attendance_Summary 
                     WHERE `Year_Month`='" . $yearMonth . "' AND ID='" . $ID . "' AND Confirm=1";
@@ -4241,10 +4231,9 @@ From Attendance_Allocation WHERE ID='" . $ID . "' and attendance_allocation.Date
                  //echo '<hr>'.$resultInsert;
             } else {
 			if( $totalDays>0){
-			$count++;
             echo "<tr align=\"center\">";
             echo "<td>" . $count . "</td>";
-            echo "<td title='". $rowAS['Date_Employement']."'>" . $rowAS['ID'] . "</td>";
+            echo "<td>" . $rowAS['ID'] . "</td>";
             echo "<td>" . $rowAS['FirstName'] . "</td>";
             echo '<td>' . $rowAS['MiddelName'] . "</td> ";
             echo '<td>' . $rowAS['LastName'] . "</td>";
@@ -4664,234 +4653,6 @@ echo "<th>Department</th>";
             $count++;
             $ID = $rowAS['ID'];
             $arrayAS[] = $rowAS;
-
-            echo "<tr align=\"center\">";
-            echo "<td>" . $count . "</td>";
-            echo "<td>" . $rowAS['ID'] . "</td>";
-            echo "<td>" . $rowAS['FirstName'] . "</td>";
-            echo '<td>' . $rowAS['MiddelName'] . "</td> ";
-            echo '<td>' . $rowAS['LastName'] . "</td>";
-		  // echo "<td > <lable class='full_name'>" . $rowAS['FirstName'] .' '. $rowAS['MiddelName'].' '. $rowAS['LastName']. "</lable></td>";
-            echo "<td>" . $rowAS['Department'] . "</td>";
-
-            echo "<td>" . $rowAS['Working_Day'] . "</td>";
-            echo "<td>" . $rowAS['Leave_Day'] . "</td>";
-            echo "<td>" . $rowAS['Absent_Day'] . "</td>";
-            echo "<td>" . $rowAS['DayOT_Hour'] . "</td>";
-            echo "<td>" . $rowAS['NightOT_Hour'] . "</td>";
-            echo "<td>" . $rowAS['OffDayOT_Hour'] . "</td>";
-            echo "<td>" . $rowAS['HolyDayOT_Hour'] . "</td>";
-
-            echo '</tr>';
-
-            if ($count == $numrows) {
-                $arrayAtendanceSummary = $this->array_Summmary($arrayAS);
-                $not_sumable = array('ID1', 'Full Name', 'FirstName1', 'MiddelName1', 'LastName1', 'Department1', 'Position', 'Prepared', 'Department_Manager', 'Checked', 'Approved', 'Year_Month', 'Confirm', 'ModifiedBy');
-
-
-                echo '<tr class="totalSum" style="font-family:Times New Roman;font-style:italic; font-weight:lighter; color: RED; font-size: 12px;" >';
-                echo '<td>&Sum;</td>';
-                foreach ($arrayAtendanceSummary as $key => $value) {
-
-                    if (!in_array(trim($key), $not_sumable)) { //displaying the total result in report field layout
-                        $value = trim($value);
-						  if (($key != 'IDNO')){
-						  
-                        if (is_numeric($value)&&($key!='Leave_Type_Days'))
-                            echo '<td class="right">' . number_format($value,1) . '</td>';
-                        else
-                        if (($key != 'Department')&&($key!='Leave_Type_Days'))
-                            echo '<td class="right">' . $value . '</td>';
-                        else if(($key!='Leave_Type_Days'))
-                            echo '<td></td>';
-							}
-                    }
-                }
-                echo "</tr>";
-                 echo '</tbody>';
-                echo '<tfoot >';
-                echo '<tr align=\"center\">';
-                echo '<td  colspan="3" ><b>Prepared By: ' . $rowAS['Prepared'] . '</b></td>';
-				
-				echo '<td  colspan="3" ><b>Department Manager: ' . $rowAS['Department_Manager'] . '</b></td>';
-
-                echo '<td  colspan="3" ><b>Checked By/HR: ' . $rowAS['Checked'] . '</b></td>';
-
-                echo '<td  colspan="4" ><b>Approved By: ' . $rowAS['Approved'] . '</b></td>';
-
-
-                echo "</tr>";
-
-                echo '<tr >';
-                echo '<td  colspan="3" ><b>____________________________</b></td>';
-
-                echo '<td  colspan="3" ><b>___________________________</b></td>';
-
-                echo '<td  colspan="3" ><b>___________________________</b></td>';
-				
-				echo '<td  colspan="4" ><b>___________________________</b></td>';
-
-                echo "</tr>";
-                echo '<tr>';
-
-date_default_timezone_set('Africa/Nairobi');
-                echo '<td colspan="35" align="right">Login as <i><b>'.$_SESSION['MM_Fullname'].'</i></b> Date <i><b>'.date('Y-m-d').'</i></b> time <i><b>'.date('H:i:s').'</i></b></td>';//<img  src="../images/thekeysoft.JPG"  height="25" width="80" />
-                echo "</tr>";
-
-                echo '</tfoot>';
-
-                echo "</table>";
-            }
-        }
-    }
-
-
-
- public function display_attendance_summary_both_manual_biometric($Department, $yearMonth) {
-
-        $dip_filter = '';
-        if (is_array($Department)) {
-            foreach ($Department as $dep_key => $dep_value) {
-                $filter = "employee_personal_record.`Department`='" . $dep_value . "'";
-                if (!$dip_filter == '') {
-                    $dip_filter .= ' or ' . $filter;
-                } else {
-                    $dip_filter = $filter;
-                }
-            }
-        } else {
-            $dip_filter = "employee_personal_record.`Department`='" . $Department . "'";
-        }
-
-
-		
-		
-		
-		
-		$sql = "SELECT `ID`, `FirstName`, `MiddelName`, `LastName`, `Department`,`Date_Employement`,
-
-SUM(`Working_Day`) AS Working_Day, SUM(`Leave_Day`) AS Leave_Day, `Leave_Type_Days`, SUM(`Absent_Day`) AS Absent_Day, SUM(`DayOT_Hour`) AS `DayOT_Hour`, SUM(`NightOT_Hour`) AS `NightOT_Hour`, SUM(`OffDayOT_Hour`) AS `OffDayOT_Hour`, SUM(`HolyDayOT_Hour`) AS `HolyDayOT_Hour`,
-
-`Year_Month`, `Prepared`, `Department_Manager`, `Checked`, `Approved`, `Confirm`, `ModifiedBy`
-FROM 
-(
-SELECT CAST((SUBSTRING_INDEX(`biometric_attendance_summary`.ID, '-', -1))AS UNSIGNED) AS IDNO,employee_personal_record.`Date_Employement`,`biometric_attendance_summary`.* 
-
-FROM `biometric_Attendance_Summary`   
-JOIN 
-employee_personal_record   
-ON `employee_personal_record`.`ID`=`biometric_attendance_summary`.`ID` 
-WHERE `Year_Month`='" . $yearMonth . "' ";    
-
-        $sql = $sql . "  AND (" . $dip_filter . ") 
-GROUP BY `biometric_attendance_summary`.`ID` 
-HAVING (Working_Day+Leave_Day>0) 
--- ORDER BY `biometric_attendance_summary`.`Department`,IDNO 
-
-UNION ALL
-
-SELECT CAST((SUBSTRING_INDEX(`manual_attendance_summary`.ID, '-', -1))AS UNSIGNED) AS IDNO,employee_personal_record.`Date_Employement`,`manual_attendance_summary`.* 
-
-FROM `manual_attendance_summary`   
-JOIN 
-employee_personal_record   
-ON `employee_personal_record`.`ID`=`manual_attendance_summary`.`ID` 
-WHERE `Year_Month`='" . $yearMonth . "' ";    
-
-        $sql = $sql . "  AND (" . $dip_filter . ") 
-GROUP BY `manual_attendance_summary`.`ID` 
-HAVING (Working_Day+Leave_Day>0) 
- -- ORDER BY `manual_attendance_summary`.`Department`,IDNO 
- ) AS Sql_1
- GROUP BY Sql_1.`ID` 
- ORDER BY Sql_1.`Department`,Sql_1.IDNO";
-		
-		
-
-//echo '<hr>'.$sql;
-
-        $result = mysql_query($sql);
-        $this->get_company_header('Employee Time Sheet for the month of ' . strtoupper(substr($_GET['Year_Month'], 0, 4)) . ' ' . strtoupper(substr($_GET['Year_Month'], 5)));
-        echo "<table id=\"Attendance_Summary\"   class=\"Attendance_Summary\" align=\"center\"  border=\"1\">";
-        echo "<thead><th>S.No</th>
-            <th>ID</th>";
-echo "<th>First Name</th>
-<th>Middel Name</th>
-<th>Last Name</th>";
-        
-//echo "<th>Full Name</th>";
-echo "<th>Department</th>";
-
-        echo "<th>Working Day</th>
-<th>Leave Day</th>
-<th>Absent Day</th>
-<th>Day OT Hour</th>
-<th>Night OT Hour</th>
-<th>Off-Day OT Hour</th>
-<th>Holyday OT Hour</th>
-</thead>
-<tbody>";
-        $count = 0;
-        $numrows = mysql_numrows($result);
-        while ($rowAS = mysql_fetch_assoc($result, MYSQL_ASSOC)) {
-            $count++;
-            $ID = $rowAS['ID'];
-            $arrayAS[] = $rowAS;
-			
-			
-			//Leap Year Cases
-			
-			$totalSumDays = $rowAS['Working_Day']  + $rowAS['Leave_Day'] + $rowAS['Absent_Day'];
-
-
-		if(($totalSumDays < 26)){
-		
-			// echo '<hr>1'.$totalSumDays.'---'.$ID.'--'.$workingDay; 
-			$diff1 =0;
-               $diff1 = 1;//26-$totalSumDays;
-		
-			  if($rowAS['Date_Employement'] <= "2020-02-21"){
-				  //$Attendance_Opening_Date){
-					  
-					  $sql_select="SELECT `manual_attendance_summary_1`.`Working_Day` 
-					  FROM `thekeyhrmsdb`.`manual_attendance_summary_1` 
-					  WHERE 
-						`manual_attendance_summary_1`.`ID` = '".$rowAS['ID']."' AND 
-						`manual_attendance_summary_1`.`Year_Month` = '2020_March'";
-					$result_select= mysql_query($sql_select);
-					$working_day1=0;
-					while ($row_select = mysql_fetch_assoc($result_select, MYSQL_ASSOC)) {
-                       $working_day1 = $row_select['Working_Day']+1 ;
-					}
-
-			  
-				$sql_update="UPDATE `thekeyhrmsdb`.`manual_attendance_summary` 
-SET `manual_attendance_summary`.`Working_Day` = '".$working_day1."'
-WHERE 
-`manual_attendance_summary`.`ID` = '".$rowAS['ID']."' AND 
-`manual_attendance_summary`.`Year_Month` = '2020_March'";
-
-$result_sql_update= mysql_query($sql_update);
-				}
-				
-			/*	else if($rowAS['Date_Employement'] > "2020-02-21"){
-				$rowAS['Absent_Day']+= $diff1;
-				
-				$sql_update="UPDATE `thekeyhrmsdb`.`manual_attendance_summary` 
-SET  `manual_attendance_summary`.`Absent_Day='".$rowAS['Absent_Day']."'
-WHERE 
-`manual_attendance_summary`.`ID` = '".$rowAS['ID']."' AND 
-`manual_attendance_summary`.`Year_Month` = '2020_March'";
-
-$result_sql_update= mysql_query($sql_update);
-				}*/
-				
-				
-				
-          //echo '<hr>2'.$ID.'--'.$workingDay;                
-            }
-//leap year case end
-
 
             echo "<tr align=\"center\">";
             echo "<td>" . $count . "</td>";
