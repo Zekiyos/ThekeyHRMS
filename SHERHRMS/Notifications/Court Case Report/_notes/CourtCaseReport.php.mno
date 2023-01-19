@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSCourtCaseReport" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Department;datatype:string,name:AppointmentDate;datatype:date,name:Case_Date;datatype:date,name:Court;datatype:string,name:Case;datatype:string,name:Result;datatype:string,name:Case_Status;datatype:string" />
+</info>

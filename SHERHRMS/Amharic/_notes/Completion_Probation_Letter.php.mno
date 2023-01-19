@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSProbationComplationLetter" value="name:Completion_Probation_Period;datatype:blob" />
+	<infoitem key="UD_RSCompeletion_Probation_Letter" value="name:Completion_Probation_Period;datatype:blob" />
+</info>

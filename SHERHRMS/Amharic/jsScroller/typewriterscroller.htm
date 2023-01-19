@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<!-- Multiple Message Typewriter is owned by its author. 
+     Unauthorized use/distribution of this software 
+     or any portion of it may result in 
+     severe civil and criminal penalties.--><title>Multiple Message Typewriter Scroller V5.0</title>
+<style type="text/css">
+ .tab { font-weight:bold;font-size:12px; text-align:center; font-family: "Arial", "Helvetica";}
+ .tabb { font-weight:bold; font-size:14px; font-family: "Arial", "Helvetica"; text-align:center;}
+ .tabbb { font-weight:bold; font-size:10px; font-family: "Arial", "Helvetica"; text-align:center;}
+</style>
+
+<!--The DEMO starts here:
+    =====================-->
+<!--Goes between <head> & </head> tags  
+    You may keep it or change to your own: 
+    .stileleft: CSS for all messages - must be left-aligned; -->
+
+<style type="text/css">
+
+/* external file "myexstyle.css" begins */
+A { text-decoration:none;}
+A:link { color: blue }
+A:visited { color: blue }
+A:hover { color: red;background-color:#66ffff;}
+ .stileleft { font-size:12px;color:blue;text-align:left;font-family: "Arial", "Helvetica", sans-serif;}
+/* end of external file "myexstyle.css" */
+
+</style>
+<!--Goes between <head> & </head> tags 
+    ================================== -->
+<script language="javascript"> 
+
+/* external file "myexparmsg.txt" begins */
+// begin: Ticker's Parameters - 
+
+//WIDTH of the Ticker in pixels: set to your own;
+//"px" unit will automatically be set in the process, so do not write "px";
+var exwidth=500; 
+
+//HEIGHT of the scrolling portion in pixels: set to your own;
+//"px" unit will automatically be set in the process, so do not write "px";
+//if extheight=0 it works as a news ticker with no scrolling;
+var extheight=80;
+
+//HEIGHT of typewriting portion in pixels: set to your own;
+//"px" unit will automatically be added in the process, so do not write "px";
+var exheight=20;
+
+//SPEED in milliseconds: 1000=1s; the higher the slower - set your own!
+var exspeed=100; 
+
+//PAUSE between messages in milliseconds: 1000=1s; set to your own;
+var expause = 3000; 
+
+//PAUSE between messages portions in milliseconds: 1000=1s; set to your own;
+var exportion = 1000; 
+
+//1.BACKGROUND color for the scrolling portion:
+//could be like: "#ffff00" or "yellow";
+var exsbcolor="#D0D0D0";
+
+//1.BACKGROUND color for the typewriting portion:
+//could be same as above for scrolling portion;
+var extbcolor="#f9fff9";
+
+//BORDER area: 1, ... ;
+//set it 0(zero) for no border;
+var exborder=0;
+
+//end Parameters 
+
+// begin: Ticker's Messages - 
+
+//Messages: as many as you'd like: set to your own; 
+//Every message MUST be set as a continuous string within '...';
+//you may split it by using '+ at ends and then ' at continuations;
+//Inside any message you MUST use \' in lieu of ' if need be!
+//Inside any message should you use this special character "<" as text 
+//instead of "less than" - it MUST be followed by space,ex: a< 5 or a < 5;
+//Also avoid using non-breaking space: "& n b s p ;";
+
+var exsgmg=new Array();
+exsgmg[0]='<font color="olive"><u><b>I. Multiple Message Typewriter Scroller v5.0</u></b></font> - An unique Dynamic Scrolling News Ticker'+
+'<br />You may use most basic HTML code - including Hyperlinks anywhere within and as many as you\'d like. Ticker stops'+
+' while Mouse is <em>placed Over</em> and also pauses for every message. TEXT STYLE for all messages must be text-align:left.';
+exsgmg[1]='2.Below is a Hyperlink. You may Click on at any time:'+
+'<b><a target=new href="http://vbarsan.com/">'+
+'<br /> ~ Javascript News Scrollers Site Map ~</b></a>';
+exsgmg[2]='<font color="red"><u><b>III.The Unique Scrolling News Typewiter expands dynamically.</b></u></font>'+
+'<br />Displays messages character by character'+
+' ticker_like - one character at a time'+
+' from left to right. Any message <em>larger than the area</em>'+
+' will show up entirely by fitting in as many sequential portions one after'+
+' another till the whole message gets completely done!.';
+//    ...
+//exsgmg[...]='...'
+//end Messages 
+/* end of external_remote file "myexparmsg.txt" */
+
+</script>
+<!-- end script between <head> and </head> Tags -->
+</head>
+<body onload="starttype();" bgcolor="#ffffcc" text="navy"><center>
+<!--Goes between <body ... > & </body> tags  
+    Place this portion in the body where the message is to appear
+    begin: body code 
+    ================ -->
+<script language="javascript">
+/* external file "myexbody.js" begins */
+/*********************************************
+*      http://javascripts.vbarsan.com/
+*©2002-2011 Vasile Barsan-All rights reserved.
+*********************************************/
+var jj=-1;var kjk=0;var sizeup=0;var sizeup0=0;var sizeup1=0;var pp=0;var ppp=0;var timer1=null;var timer2=null;var ktm1=1;var ktm2=0;var ktm11=0;var thesize=0;var retxt='';var rextxt='';var ktm22=0;var heightt=extheight;var exmsgclas='class="stileleft"';function dommrge1(){if(document.all)domdiv.style.pixelTop=0;else domdiv.style.top=0;heightt=extheight;if(extheight>0)domdivt.innerHTML='';pp=0;sizeup1=0;retxt='';domdiv.innerHTML=retxt;ktm1=1;dommrge11();}function dommrge12(){heightt-=thesize;if(document.all)domdivt.style.pixelTop=heightt;else domdivt.style.top=heightt+"px";domdivt.innerHTML=domdiv.innerHTML;dommrge11();}function dommrge11(){
+if(pp==1){pp=0;sizeup1=sizeup0;if(document.all)domdiv.style.pixelTop=-sizeup0;else domdiv.style.top=-sizeup0+"px";}
+ktm2=1;jj++;if(jj<exsgmg[kjk].length-1&&exsgmg[kjk].charAt(jj)=="<"&&exsgmg[kjk].charAt(jj+1)!=" "){
+ppp=exsgmg[kjk].indexOf(">",jj);retxt=exsgmg[kjk].substring(0,ppp+1);jj=ppp;dommrge11();}else if(jj<=exsgmg[kjk].length){retxt+=exsgmg[kjk].charAt(jj);domdiv.style.visibility="hidden";domdiv.innerHTML=retxt;sizeup=domdiv.offsetHeight;ktm2=0;if(sizeup-sizeup1<=exheight){domdiv.style.visibility="visible";thesize=sizeup-sizeup1;rextxt=retxt;sizeup0=sizeup;timer2=setTimeout("dommrge11()",exspeed);}else{pp=1;if(exsgmg[kjk].charAt(jj-1)==">"||exsgmg[kjk].charAt(jj-1)==" "||exsgmg[kjk].charAt(jj)==" "){domdiv.innerHTML=exsgmg[kjk].substring(0,jj);retxt=exsgmg[kjk].substring(0,jj);jj-=1;}else{ppp=exsgmg[kjk].lastIndexOf(" ",jj);domdiv.innerHTML=exsgmg[kjk].substring(0,ppp);retxt=exsgmg[kjk].substring(0,ppp);if(exsgmg[kjk].charAt(ppp-1)!=" ")domdiv.innerHTML=retxt;jj=ppp-1;}domdiv.style.visibility="visible";if(extheight>0)timer2=setTimeout("dommrge12()",exportion);else timer2=setTimeout("dommrge11()",exportion);}}else{jj=-1;if(kjk==exsgmg.length-1)kjk=0;else kjk++;ktm1=0;heightt-=thesize;if(document.all&&extheight>0)domdivt.style.pixelTop=heightt;if(document.getElementById&&extheight>0)domdivt.style.top=heightt+"px";if(extheight>0){domdivt.innerHTML=domdiv.innerHTML;domdiv.innerHTML='';}heightt=extheight;timer1=setTimeout("dommrge1()",expause);}}function ns4mrge12(){heightt-=thesize;ns4divt.top=heightt;ns4divt.document.write('<span '+exmsgclas+'>'+rextxt+'</span>');ns4divt.document.close();ns4mrge11();}function ns4mrge1(){
+ns4div.top=0;pp=0;sizeup1=0;retxt='';if(extheight>0){ns4divt.document.write(retxt);ns4divt.document.close();}ns4div.document.write(retxt);ns4div.document.close();ktm1=1;ns4mrge11();}function ns4mrge11(){
+if(pp==1){pp=0;sizeup1=sizeup0;ns4div.top=-sizeup0;}ktm2=1;jj++;if(jj<exsgmg[kjk].length-1&&exsgmg[kjk].charAt(jj)=="<"&&exsgmg[kjk].charAt(jj+1)!=" "){ppp=exsgmg[kjk].indexOf(">",jj);retxt=exsgmg[kjk].substring(0,ppp+1);jj=ppp;ns4mrge11();}else if(jj<=exsgmg[kjk].length){retxt+=exsgmg[kjk].charAt(jj);ns4div.document.write('<span '+exmsgclas+'>'+retxt+'</span>');ns4div.document.close();sizeup=ns4div.document.height;if(jj<exsgmg[kjk].length&&exsgmg[kjk].charAt(jj)!=" ")ns4div.document.write('<span '+exmsgclas+'>'+exsgmg[kjk].substring(0,jj)+'</span>');ns4div.document.close();ktm2=0;if(sizeup-sizeup1<=exheight){sizeup0=sizeup;thesize=sizeup-sizeup1;rextxt=retxt;timer2=setTimeout("ns4mrge11()",exspeed);}else {ns4div.visibility="hide";pp=1;if(exsgmg[kjk].charAt(jj-1)==">"||exsgmg[kjk].charAt(jj-1)==" "||exsgmg[kjk].charAt(jj)==" "){ns4div.document.write('<span '+exmsgclas+'>'+exsgmg[kjk].substring(0,jj)+'</span>');ns4div.document.close();retxt=exsgmg[kjk].substring(0,jj);rextxt=retxt;jj-=1;}else {ppp=exsgmg[kjk].lastIndexOf(" ",jj);if(exsgmg[kjk].charAt(ppp-1)!=" ")ns4div.document.write('<span '+exmsgclas+'>'+exsgmg[kjk].substring(0,ppp)+'</span>');else ns4div.document.write('<span '+exmsgclas+'>'+exsgmg[kjk].substring(0,ppp)+'</span>');ns4div.document.close();retxt=exsgmg[kjk].substring(0,ppp);rextxt=retxt;jj=ppp-1;}ns4div.visibility="show";if(extheight>0)timer2=setTimeout("ns4mrge12()",exportion);else timer2=setTimeout("ns4mrge11()",exportion);}}else{jj=-1;if(kjk==exsgmg.length-1)kjk=0;else kjk++;heightt-=thesize;if(extheight>0){ns4divt.top=heightt;ns4divt.document.write('<span '+exmsgclas+'>'+rextxt+'</span>');ns4divt.document.close();ns4div.document.write('');ns4div.document.close();}heightt=extheight;ktm1=0;timer1=setTimeout("ns4mrge1()",expause);}}function starttype(){
+if(document.getElementById){if(extheight>0)domdivt=document.getElementById('typscroll');domdiv=document.getElementById('typediv');dommrge1();}else if(document.all){domdiv=typediv;if(extheight>0)domdivt=typscroll;dommrge1();}else if(document.layers){if(extheight>0)ns4divt=document.scrolns4.document.scrollns4;ns4div=document.ns4typeb0.document.ns4typeb1;ns4mrge1();}}document.write('<table align="center" border="'+exborder+'" cellspacing="0" cellpadding="0"><tr>');if(extheight>0){document.write('<td valign="top" width="'+exwidth+'px" height="'+extheight+'px" bgcolor="'+exsbcolor+'">');if(document.layers)document.write('<ilayer height='+extheight+' width='+exwidth+' id="scrolns4"><layer id="scrollns4" onMouseOver="if(ktm1==0){ktm11=1;clearTimeout(timer1)}if(timer2!=null&&ktm2==0){ktm22=1;clearTimeout(timer2)}" onMouseout="if(ktm11==1){ktm11=0;timer1=setTimeout(\'ns4mrge1()\',1000)}if(ktm22==1){ktm22=0;timer2=setTimeout(\'ns4mrge11()\',100)}"></layer></ilayer>');if(document.all||document.getElementById)document.write('<div '+exmsgclas+' style="position:relative;overflow:hidden;width:'+exwidth+'px;height:'+extheight+'px;clip:rect(0 '+exwidth+'px '+extheight+'px 0);" onMouseOver="if(ktm1==0){ktm11=1;clearTimeout(timer1);}if(timer2!=null&&ktm2==0){ktm22=1;clearTimeout(timer2);}" onMouseout="if(ktm11==1){ktm11=0;timer1=setTimeout(\'dommrge1()\',1000);}if(ktm22==1){ktm22=0;timer2=setTimeout(\'dommrge11()\',100);}"><div id="typscroll" '+exmsgclas+' style="position:relative;width:'+exwidth+'px;"></div></div>');document.write('</td></tr><tr>');}document.write('<td height="'+exheight+'" width="'+exwidth+'" bgcolor="'+extbcolor+'">');if(document.all||document.getElementById){document.write('<div '+exmsgclas+' style="position:relative;overflow:hidden;width:'+exwidth+'px;height:'+exheight+'px;clip:rect(0 '+exwidth+'px '+exheight+'px 0);" onMouseOver="if(ktm1==0){ktm11=1;clearTimeout(timer1);}if(timer2!=null&&ktm2==0){ktm22=1;clearTimeout(timer2);}" onMouseout="if(ktm11==1){ktm11=0;timer1=setTimeout(\'dommrge1()\',1000);}if(ktm22==1){ktm22=0;timer2=setTimeout(\'dommrge11()\',100);}"><div id="typediv" '+exmsgclas+' style="position:absolute;"></div></div>');}if(document.layers){document.write('<ilayer id="ns4typeb0" width="'+exwidth+'" height="'+exheight+'" onMouseOver="if(ktm1==0){ktm11=1;clearTimeout(timer1)}if(timer2!=null&&ktm2==0){ktm22=1;clearTimeout(timer2)}" onMouseout="if(ktm11==1){ktm11=0;timer1=setTimeout(\'ns4mrge1()\',1000)}if(ktm22==1){ktm22=0;timer2=setTimeout(\'ns4mrge11()\',100)}"><layer id="ns4typeb1" width="'+exwidth+'" height="'+exheight+'" onMouseOver="if(ktm1==0){ktm11=1;clearTimeout(timer1)}if(timer2!=null&&ktm2==0){ktm22=1;clearTimeout(timer2)}" onMouseout="if(ktm11==1){ktm11=0;timer1=setTimeout(\'ns4mrge1()\',1000)}if(ktm22==1){ktm22=0;timer2=setTimeout(\'ns4mrge11()\',100)}"></layer></ilayer>')}document.write('</td></tr></table>');
+/* end of external file "myexbody.js" */
+</script>
+<!-- ============== 
+     end  body code -->
+<!-- ==============DEMO ends here -->
+
+<table><tr><td width="780">
+<div align="center" class="tab"><b><u>Multiple Message Typewriter Scroller v5.0 ***** 4 STEPS below to follow</u></b></div>
+<div align="center" class="tabbb">DEMO runs an exact copy of the script's boxes below - See Source: DEMO starts ... DEMO ends.
+<br />Use 'Select' to copy each portion and follow the steps indicated when implementing the script.
+<br /><u>Using External files: employ specified HTML lines and create files with boxes code as indicated.</u></div></td></tr></table>
+
+<br />
+
+<script language="javascript">
+function ctrlA0(corp) {
+with(corp){
+focus(); select()
+}
+if(document.all){
+txt=corp.createTextRange()
+txt.execCommand("Copy")
+window.status='Text copied to clipboard'
+}
+else window.status='Press ctrl-c to copy the text to the clipboard'
+setTimeout("window.status=''",5000)
+}
+</script>
+
+<form metod="post" name="clipost0">
+<div class="tab"><input type="button" value="Select-1" onclick="ctrlA0(document.clipost0.SC00)">
+<*link rel="stylesheet" type="text/css" href="myexstyle.css" />
+<br /><u>Step I. STYLE SHEETS</u> - Use HTML line above only if you set an External file (remove *)</div>
+<textarea rows="3" name="SC00" cols="70" wrap="virtual" style="width:90%">
+<!--Goes between <head> & </head> tags  
+    You may keep it or change to your own: 
+    .stileleft: CSS for all messages - must be left-aligned; -->
+
+<style type="text/css">
+
+/* external file "myexstyle.css" begins */
+A { text-decoration:none;}
+A:link { color: blue }
+A:visited { color: blue }
+A:hover { color: red;background-color:#66ffff;}
+ .stileleft { font-size:12px;color:blue;text-align:left;font-family: "Arial", "Helvetica", sans-serif;}
+/* end of external file "myexstyle.css" */
+
+</style>
+</textarea></form>
+<script language="javascript">
+function ctrlA1(corp) {
+with(corp){
+focus(); select()
+}
+if(document.all){
+txt=corp.createTextRange()
+txt.execCommand("Copy")
+window.status='Text copied to clipboard'
+}
+else window.status='Press ctrl-c to copy the text to the clipboard'
+setTimeout("window.status=''",5000)
+}
+</script>
+<form metod="post" name="clipost1">
+<div class="tab"><input type="button" value="Select-2" onclick="ctrlA1(document.clipost1.SC01)">
+<*script language="javascript" type="text/javascript" src="myexparmsg.txt"><*/script>
+<br /><u>Step II. PARAMETERS & MESSAGES</u> - Use HTML line above only if you set an External file (remove both *)
+<br />Make sure the path of file myexparmsg.txt is set right, a proper URL for the file must be filled in, that is.
+<br />If your page has other javascript code before this, make sure you already closed it with <*/script>, or
+<br />if you have any javascript code after, make sure to have it start with: <*script language="javascript"> 
+<br />========== Below is the main part to cut&paste and where your own values to be set ==========</div>
+<textarea rows="9" name="SC01" cols="70" wrap="virtual" style="width:90%">
+<!--Goes between <head> & </head> tags 
+    ================================== -->
+<script language="javascript"> 
+
+/* external file "myexparmsg.txt" begins */
+// begin: Ticker's Parameters - 
+
+//WIDTH of the Ticker in pixels: set to your own;
+//"px" unit will automatically be set in the process, so do not write "px";
+var exwidth=500; 
+
+//HEIGHT of the scrolling portion in pixels: set to your own;
+//"px" unit will automatically be set in the process, so do not write "px";
+//if extheight=0 it works as a news ticker with no scrolling;
+var extheight=80;
+
+//HEIGHT of typewriting portion in pixels: set to your own;
+//"px" unit will automatically be added in the process, so do not write "px";
+var exheight=20;
+
+//SPEED in milliseconds: 1000=1s; the higher the slower - set your own!
+var exspeed=100; 
+
+//PAUSE between messages in milliseconds: 1000=1s; set to your own;
+var expause = 3000; 
+
+//PAUSE between messages portions in milliseconds: 1000=1s; set to your own;
+var exportion = 1000; 
+
+//1.BACKGROUND color for the scrolling portion:
+//could be like: "#ffff00" or "yellow";
+var exsbcolor="#D0D0D0";
+
+//1.BACKGROUND color for the typewriting portion:
+//could be same as above for scrolling portion;
+var extbcolor="#f9fff9";
+
+//BORDER area: 1, ... ;
+//set it 0(zero) for no border;
+var exborder=0;
+
+//end Parameters 
+
+// begin: Ticker's Messages - 
+
+//Messages: as many as you'd like: set to your own; 
+//Every message MUST be set as a continuous string within '...';
+//you may split it by using '+ at ends and then ' at continuations;
+//Inside any message you MUST use \' in lieu of ' if need be!
+//Inside any message should you use this special character "<" as text 
+//instead of "less than" - it MUST be followed by space,ex: a< 5 or a < 5;
+//Also avoid using non-breaking space: "& n b s p ;";
+
+var exsgmg=new Array();
+exsgmg[0]='<font color="olive"><u><b>I. Multiple Message Typewriter Scroller v5.0</u></b></font> - An unique Dynamic Scrolling News Ticker'+
+'<br />You may use most basic HTML code - including Hyperlinks anywhere within and as many as you\'d like. Ticker stops'+
+' while Mouse is <em>placed Over</em> and also pauses for every message. TEXT STYLE for all messages must be text-align:left.';
+exsgmg[1]='2.Below is a Hyperlink. You may Click on at any time:'+
+'<b><a target=new href="http://vbarsan.com/">'+
+'<br /> ~ Javascript News Scrollers Site Map ~</b></a>';
+exsgmg[2]='<font color="red"><u><b>III.The Unique Scrolling News Typewiter expands dynamically.</b></u></font>'+
+'<br />Displays messages character by character'+
+' ticker_like - one character at a time'+
+' from left to right. Any message <em>larger than the area</em>'+
+' will show up entirely by fitting in as many sequential portions one after'+
+' another till the whole message gets completely done!.';
+//    ...
+//exsgmg[...]='...'
+//end Messages 
+/* end of external_remote file "myexparmsg.txt" */
+
+</script>
+<!-- end script between <head> and </head> Tags -->
+</textarea></form><div align="center" class="tabb"><u>Step III. Within the openning body Tag itself set event handler:</u> onload="starttype();"<br />
+<br /><u>Step IV.</u> <*script language="javascript" type="text/javascript" src="myexbody.js"><*/script></div>
+<div class="tab">Place the above HTML line <u>within the page's body</u> right where the ticker is to appear (remove both *).
+<br />*** <u>File "mybcbody.js" is in yourpackage.zip - place it in your working/web space & make sure the link in src="..." above is set right</u> ***</div>
+<br />
+<div class="tabbb"><u><b>Note.</b></u> You may use on your page any <b>DOCTYPE</b>, either Standards compliant mode or Quirks mode
+<br />Copyright &copy; 2002-2011. All rights reserved. Multiple Message Typewriter Scroller v5.0 is owned by its author: Vasile Barsan</div>
+</center></body></html>

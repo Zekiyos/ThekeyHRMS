@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSSickLeaveGrant" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:SickLeaveDays;datatype:int,name:SickLeave_Taken_Date;datatype:date,name:ReportOn;datatype:date,name:LeaveType;datatype:string" />
+	<infoitem key="UD_RSMedicalRefferal" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Leavedays;datatype:int,name:RestDay;datatype:int,name:Leave_Taken_Date;datatype:date,name:ReportOn;datatype:date,name:LeaveType;datatype:string" />
+</info>

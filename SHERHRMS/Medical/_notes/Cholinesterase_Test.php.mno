@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RSCholinesteraseTest" value="name:Auto_ID;datatype:int,name:ID;datatype:string,name:FirstName;datatype:string,name:MiddelName;datatype:string,name:LastName;datatype:string,name:Department;datatype:string,name:LastResult;datatype:real,name:LastTestDate;datatype:date,name:FirstResult;datatype:real,name:FirstTestDate;datatype:date,name:FirstDifference;datatype:real,name:SecondResult;datatype:real,name:SecondTestDate;datatype:date,name:SecondDifference;datatype:real,name:ThirdResult;datatype:real,name:ThirdTestDate;datatype:date,name:ThirdDifference;datatype:real,name:ForthResult;datatype:real,name:ForthTestDate;datatype:date,name:ForthDifference;datatype:real" />
+</info>

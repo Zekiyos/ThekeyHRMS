@@ -1,0 +1,82 @@
+//linner join for sick leave with employee personal record all fields
+SELECT *  FROM Employee_personal_record
+INNER JOIN Sick_leave
+ON Employee_personal_record.Id=Sick_leave.Id 
+ORDER BY Employee_personal_record.LastName
+
+
+SELECT Employee_personal_record.LastName, Employee_personal_record.FirstName,Sick_leave.Sickleavedays, Employee_personal_record.ID,Employee_personal_record.Department FROM Employee_personal_record
+INNER JOIN Sick_leave
+ON Employee_personal_record.Id=Sick_leave.Id 
+ORDER BY Employee_personal_record.LastName
+
+SELECT Employee_personal_record.LastName, Employee_personal_record.FirstName,Sick_leave.Sickleavedays, Employee_personal_record.ID,Employee_personal_record.Department FROM Employee_personal_record
+RIGHT JOIN Sick_leave
+ON Employee_personal_record.Id=Sick_leave.Id 
+ORDER BY Employee_personal_record.LastName
+
+
+SELECT Employee_personal_record.LastName, Employee_personal_record.FirstName,Sick_leave.Sickleavedays, Employee_personal_record.ID,Employee_personal_record.Department FROM Employee_personal_record
+LEFT JOIN Sick_leave
+ON Employee_personal_record.Id=Sick_leave.Id 
+ORDER BY Employee_personal_record.LastName
+
+
+SELECT Employee_personal_record.LastName, Employee_personal_record.FirstName,Sick_leave.Sickleavedays, Employee_personal_record.ID,Employee_personal_record.Department FROM Employee_personal_record
+FUll JOIN Sick_leave
+ON Employee_personal_record.Id=Sick_leave.Id 
+ORDER BY Employee_personal_record.LastName
+
+///all leaves union table view
+SELECT * from funeral_leave
+union
+SELECT * from SICK_Leave
+UNion
+SELECT * from Wedding_Leave
+UNION
+SELECT * from Maternity_Leave
+UNION
+SELECT Auto_ID,ID,FirstName,MiddelName,LastName,LeaveDays,Leave_Taken_Date,ReportOn,LeaveType,Reported,Report_Back_Date from annual_Leave
+
+//union of funeral leave and sick leave using employee personal reocrd
+
+SELECT *
+FROM Employee_personal_record
+INNER JOIN funeral_leave ON Employee_personal_record.Id = funeral_leave.Id
+UNION
+SELECT *
+FROM Employee_personal_record
+INNER JOIN Sick_leave ON Employee_personal_record.Id = Sick_leave.Id
+LIMIT 0 , 30
+
+//left join funneral leaves with sick leave and employee personal reocred
+
+SELECT * FROM Employee_personal_record
+LEFT JOIN funeral_leave ON Employee_personal_record.ID = funeral_leave.ID 
+LEFT JOIN sick_leave ON Employee_personal_record.ID = sick_leave.ID;
+
+
+//using right join display only which is there leave availabe
+SELECT * FROM Employee_personal_record
+Right JOIN funeral_leave ON Employee_personal_record.ID = funeral_leave.ID 
+Right JOIN sick_leave ON Employee_personal_record.ID = sick_leave.ID;
+
+//left join all leaves type employee personal recored 
+SELECT * FROM Employee_personal_record
+LEFT JOIN funeral_leave ON Employee_personal_record.ID = funeral_leave.ID 
+LEFT JOIN sick_leave ON Employee_personal_record.ID = sick_leave.ID
+LEFT JOIN annual_leave ON Employee_personal_record.ID = `annual_Leave`.ID
+LEFT JOIN Maternity_leave ON Employee_personal_record.ID = Maternity_leave.ID
+LEFT JOIN Wedding_leave ON Employee_personal_record.ID = Wedding_leave.ID
+
+
+
+//left join all leaves type employee personal recored 
+SELECT * FROM Employee_personal_record
+LEFT JOIN funeral_leave ON Employee_personal_record.ID = funeral_leave.ID 
+LEFT JOIN sick_leave ON Employee_personal_record.ID = sick_leave.ID
+LEFT JOIN select annual_leave.Leavedays,annual_leave.RestDay,annual_leave.Leave_Taken_Date,annual_leave.ReportOn,annual_leave.LeaveType,annual_leave.Reported from annual_leave 	 
+annual_leave.Report_Back_Date  ON Employee_personal_record.ID = `annual_Leave`.ID
+LEFT JOIN Maternity_leave ON Employee_personal_record.ID = Maternity_leave.ID
+LEFT JOIN Wedding_leave ON Employee_personal_record.ID = Wedding_leave.ID
+
