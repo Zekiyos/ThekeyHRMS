@@ -12,9 +12,9 @@
 
 # HOW to USE Thekey HRMS 
 ** Developed by customized for AQ Roses PLC 
-** 1. Move the whole Directory ThekeyHRMS to the root directory folder
-** 2. Use thekeyhrmsdb.sql file to create the system database schema and data from database directory
-** 3. Use URL http://localhost/ThekeyHRMS to access the system
+#  1. Move the whole Directory ThekeyHRMS to the root directory folder
+#  2. Use thekeyhrmsdb.sql file to create the system database schema and data from database directory
+#  3. Use URL http://localhost/ThekeyHRMS to access the system
 
 
 #	Information about Updates: 
